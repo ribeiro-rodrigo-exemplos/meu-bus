@@ -1,0 +1,1 @@
+package br.com.m2m.meuonibus.handlers;import java.util.ArrayList;import android.os.Handler;import br.com.m2m.meuonibus.models.PolylinePoint;public class PolylinePointHandler extends Handler {	public void setPoint(PolylinePoint point) {	}	public void setPoints(ArrayList<PolylinePoint> points) {	}	public void setErro(Throwable e) {	}}

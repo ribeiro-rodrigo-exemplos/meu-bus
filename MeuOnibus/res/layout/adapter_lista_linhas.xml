@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="35dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp" >
+<com.neopixl.pixlui.components.textview.TextView
+    android:id="@+id/linha_adapter_lista_linha"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="0dp"
+    android:layout_weight="1.5"
+    android:gravity="center"
+    android:text="@null"
+    android:textColor="@color/green"
+    android:textSize="17sp"
+    pixlui:typeface="FontCustom1.otf" />
+<TextView
+    android:id="@+id/nome_adapter_lista_linha"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="0dp"
+    android:layout_weight="6"
+    android:gravity="left|center_vertical"
+    android:paddingLeft="8dp"
+    android:text="@null"
+    android:textColor="@color/textDefault"
+    android:textSize="14sp" />
+<TextView
+    android:id="@+id/tempo_adapter_lista_linha"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="0dp"
+    android:layout_weight="3"
+    android:gravity="right|center_vertical"
+    android:paddingRight="10dp"
+    android:text="@null"
+    android:textColor="@color/black"
+    android:textSize="14sp"
+    android:textStyle="bold" />
+
+</LinearLayout>

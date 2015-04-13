@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/tutorial_view_pager_content"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" />
+
+    <com.neopixl.pixlui.components.button.Button
+        android:id="@+id/tutorial_close"
+        android:layout_width="192dp"
+        android:layout_height="46dp"
+        android:layout_above="@+id/tutorial_scroll_indicator"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/border_around_tutorial"
+        android:text="@string/pular_tutorial"
+        android:textColor="@color/white"
+        pixlui:typeface="Teuton24Pro.otf" />
+
+    <LinearLayout
+        android:id="@+id/tutorial_scroll_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/fragment_seja_treinador_scroll_indicator_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:contentDescription="@null"
+            android:src="@drawable/scroll_inativo_bgesc" />
+
+        <ImageView
+            android:id="@+id/fragment_seja_treinador_scroll_indicator_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:contentDescription="@null"
+            android:src="@drawable/scroll_inativo_bgesc" />
+
+        <ImageView
+            android:id="@+id/fragment_seja_treinador_scroll_indicator_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:contentDescription="@null"
+            android:src="@drawable/scroll_inativo_bgesc" />
+
+    </LinearLayout>
+
+</RelativeLayout>

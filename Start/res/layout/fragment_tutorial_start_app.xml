@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black" >
+
+    <ImageView
+        android:id="@+id/tutorial_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/tutorial"
+        android:src="@drawable/tutorial_1" />
+
+    <com.neopixl.pixlui.components.textview.TextView
+        android:id="@+id/tutorial_text"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:paddingTop="200dp"
+        android:text="@string/tutorial_text_1"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        pixlui:typeface="Teuton24Pro.otf" />
+
+    <!--
+         <WebView
+        android:id="@+id/tutorial_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    -->
+
+</RelativeLayout>

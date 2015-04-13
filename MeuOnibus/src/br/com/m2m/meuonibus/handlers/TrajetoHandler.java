@@ -1,0 +1,1 @@
+package br.com.m2m.meuonibus.handlers;import java.util.ArrayList;import br.com.m2m.meuonibus.models.Trajeto;import android.os.Handler;public class TrajetoHandler extends Handler {	public void setTrajeto(Trajeto trajeto) {	}	public void setTrajetos(ArrayList<Trajeto> trajetos) {	}	public void setErro(Throwable e) {	}}

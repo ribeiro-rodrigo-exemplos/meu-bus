@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<br.com.hhw.startapp.helpers.TryAgainHelper xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" 
+    android:visibility="gone" >
+
+    <TextView
+        android:id="@+id/without_internet_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="@string/ops"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/without_internet_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/error"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/without_internet_button_try_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/holo_blue_light"
+        android:text="@string/tentar_de_novo" />
+
+</br.com.hhw.startapp.helpers.TryAgainHelper>

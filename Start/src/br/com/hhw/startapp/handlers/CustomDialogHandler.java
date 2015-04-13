@@ -1,0 +1,1 @@
+package br.com.hhw.startapp.handlers;import android.os.Handler;public class CustomDialogHandler  extends Handler {	public void setOk() {	}	public void setNo() {	}}

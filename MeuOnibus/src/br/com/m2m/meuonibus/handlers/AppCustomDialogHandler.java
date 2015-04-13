@@ -1,0 +1,1 @@
+package br.com.m2m.meuonibus.handlers;import android.os.Handler;public class AppCustomDialogHandler extends Handler {		public void setText(String text) {	}		public void setOk() {	}	public void setNo() {	}}
