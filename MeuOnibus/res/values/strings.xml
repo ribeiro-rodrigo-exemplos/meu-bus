@@ -54,6 +54,7 @@
     <string name="mensagem_enviada">Mensagem enviada</string>
     <string name="mensagem_enviando">Enviando mensagem</string>
     <string name="mensagem_nao_enviada">Não foi possível enviar sua mensagem. Tente mais tarde.</string>
+    <string name="mensagem_ligue_gps">Ligue seu GPS para podermos localizar pontos próximos a sua localização.</string>
     <string name="todos_os_campos_obrigatorios">É necessário preencher o assunto e o comentário.</string>
     <string name="digite_aqui">Digite aqui</string>
     <string name="digite_novo_nome_ponto">Digite um novo nome para seu ponto</string>
