@@ -2,6 +2,7 @@
 <resources>
 
     <string name="app_name">Meu Onibus</string>
+    <!-- Nome da app embaixo da ícone -->
     <string name="app_name_in_device">Meu Ônibus</string>
 
     <!-- MENU -->
@@ -51,6 +52,7 @@
     <string name="veiculo">VEÍCULO</string>
     <string name="assunto">Assunto</string>
     <string name="comentario">Comentário</string>
+    <string name="mensagem_sem_noticia">Não foi possível carregar as notícias.</string>
     <string name="mensagem_enviada">Mensagem enviada</string>
     <string name="mensagem_enviando">Enviando mensagem</string>
     <string name="mensagem_nao_enviada">Não foi possível enviar sua mensagem. Tente mais tarde.</string>
