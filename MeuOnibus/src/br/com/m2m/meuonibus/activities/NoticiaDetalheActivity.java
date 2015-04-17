@@ -34,7 +34,7 @@ public class NoticiaDetalheActivity extends BaseWithTitleActivity {
 			// TODO: handle exception
 		}
 
-		setActionBarTitle("Notícia");
+		setActionBarTitle(getString(R.string.noticias));
 
 		if (savedInstanceState == null) {
 			getSupportFragmentManager().beginTransaction()
