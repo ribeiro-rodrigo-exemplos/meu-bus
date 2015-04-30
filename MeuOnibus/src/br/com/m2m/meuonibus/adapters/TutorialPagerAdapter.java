@@ -15,12 +15,12 @@ public class TutorialPagerAdapter extends FragmentPagerAdapter {
 	public final static List<Integer> TUTORIAL_IMAGES = Arrays
 			.asList(new Integer[] { R.drawable.tutorial_1,
 					R.drawable.tutorial_2, R.drawable.tutorial_3, R.drawable.tutorial_4,
-					R.drawable.tutorial_5, R.drawable.tutorial_6 });
+					R.drawable.tutorial_99,R.drawable.tutorial_5, R.drawable.tutorial_6 });
 
 	public final static List<Integer> TUTORIAL_TEXTS = Arrays
 			.asList(new Integer[] { R.string.tutorial_text_1,
 					R.string.tutorial_text_2, R.string.tutorial_text_3,R.string.tutorial_text_1,
-					R.string.tutorial_text_2, R.string.tutorial_text_3 });
+					R.string.tutorial_text_2, R.string.tutorial_text_3,R.string.tutorial_text_1 });
 
 	private ArrayList<Fragment> datasource;
 

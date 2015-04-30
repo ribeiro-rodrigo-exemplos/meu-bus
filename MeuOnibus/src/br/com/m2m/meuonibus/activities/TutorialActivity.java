@@ -22,6 +22,8 @@ public class TutorialActivity extends ActionBarActivity {
 	private ImageView imageScroll3;
 	private ImageView imageScroll4;
 	private ImageView imageScroll5;
+	
+	private ImageView imageScroll6;
 
 	private int pagerCurrentItem = 0;
 
@@ -63,6 +65,7 @@ public class TutorialActivity extends ActionBarActivity {
 		imageScroll3 = (ImageView) findViewById(R.id.fragment_seja_treinador_scroll_indicator_3);
 		imageScroll4 = (ImageView) findViewById(R.id.fragment_seja_treinador_scroll_indicator_4);
 		imageScroll5 = (ImageView) findViewById(R.id.fragment_seja_treinador_scroll_indicator_5);
+		imageScroll6 = (ImageView) findViewById(R.id.fragment_seja_treinador_scroll_indicator_6);
 
 		imagesScrollPager = new ArrayList<ImageView>();
 		imagesScrollPager.add(imageScroll0);
@@ -71,7 +74,7 @@ public class TutorialActivity extends ActionBarActivity {
 		imagesScrollPager.add(imageScroll3);
 		imagesScrollPager.add(imageScroll4);
 		imagesScrollPager.add(imageScroll5);
-
+		imagesScrollPager.add(imageScroll6);
 	}
 
 	private void setPagerScrollImageSelected(int position) {

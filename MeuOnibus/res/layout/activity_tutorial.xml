@@ -14,11 +14,11 @@
         android:id="@+id/tutorial_scroll_indicator"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
         android:gravity="center"
-        android:paddingTop="360dp"
-        android:orientation="horizontal" >
+        android:orientation="horizontal"
+        android:paddingTop="360dp" >
 
         <ImageView
             android:id="@+id/fragment_seja_treinador_scroll_indicator_0"
@@ -62,6 +62,14 @@
 
         <ImageView
             android:id="@+id/fragment_seja_treinador_scroll_indicator_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:contentDescription="@null"
+            android:src="@drawable/scroll_inativo" />
+
+        <ImageView
+            android:id="@+id/fragment_seja_treinador_scroll_indicator_6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"

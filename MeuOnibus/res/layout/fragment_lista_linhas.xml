@@ -17,8 +17,8 @@
             <ImageView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:contentDescription="@null"
                 android:background="@drawable/ponto_ilustracao_nine"
+                android:contentDescription="@null"
                 android:src="@null" />
 
             <RelativeLayout
@@ -41,63 +41,57 @@
             </RelativeLayout>
         </RelativeLayout>
 
-        <LinearLayout
+<!--         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
-            android:orientation="vertical" >
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:paddingBottom="7dp"
+            android:paddingTop="5dp" >
 
-            <LinearLayout
-                android:layout_width="match_parent"
+            <RelativeLayout
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:baselineAligned="false"
-                android:orientation="horizontal"
-                android:paddingBottom="7dp"
-                android:paddingTop="5dp" >
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingLeft="8dp" >
 
-                <RelativeLayout
-                    android:layout_width="0dp"
+                <ImageView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="left"
-                    android:paddingLeft="8dp" >
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_onibus" />
+            </RelativeLayout>
 
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:contentDescription="@null"
-                        android:src="@drawable/ic_onibus" />
-                </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="10dp" >
 
-                <RelativeLayout
-                    android:layout_width="0dp"
+                <ImageView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:paddingLeft="10dp" >
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_linha" />
+            </RelativeLayout>
 
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:contentDescription="@null"
-                        android:src="@drawable/ic_linha" />
-                </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingRight="8dp" >
 
-                <RelativeLayout
-                    android:layout_width="0dp"
+                <ImageView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="right"
-                    android:paddingRight="8dp" >
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:contentDescription="@null"
-                        android:src="@drawable/ic_tempo" />
-                </RelativeLayout>
-            </LinearLayout>
-        </LinearLayout>
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_tempo" />
+            </RelativeLayout>
+        </LinearLayout> -->
 
         <android.support.v4.widget.SwipeRefreshLayout
             android:id="@+id/swipe_container_lista_linhas_fragment"
