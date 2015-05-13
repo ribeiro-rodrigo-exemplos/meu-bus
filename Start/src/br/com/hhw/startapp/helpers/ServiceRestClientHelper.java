@@ -6,6 +6,7 @@ import android.content.Context;
 
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
+import com.loopj.android.http.PersistentCookieStore;
 import com.loopj.android.http.RequestParams;
 
 public class ServiceRestClientHelper {
@@ -13,6 +14,15 @@ public class ServiceRestClientHelper {
 
 	public static void getAuth(String url, RequestParams params, String login,
 			String senha, AsyncHttpResponseHandler responseHandler) {
+		client.setBasicAuth(login, senha);
+		client.get(url, params, responseHandler);
+	}
+	
+	public static void getAuth(Context context, String url, RequestParams params, String login,
+			String senha, AsyncHttpResponseHandler responseHandler) {
+		PersistentCookieStore myCookieStore = new PersistentCookieStore(context);
+		myCookieStore.setOmitNonPersistentCookies(true);
+		client.setCookieStore(myCookieStore);
 		client.setBasicAuth(login, senha);
 		client.get(url, params, responseHandler);
 	}

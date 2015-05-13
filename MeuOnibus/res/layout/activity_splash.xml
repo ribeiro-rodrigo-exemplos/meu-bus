@@ -9,10 +9,9 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent" >
 
-        <ImageButton
+        <ImageView
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:background="@android:color/transparent"
             android:contentDescription="@null"
             android:scaleType="fitXY"
             android:src="@drawable/splash_bg" />
@@ -23,12 +22,11 @@
         android:layout_height="match_parent"
         android:gravity="center" >
 
-        <ImageButton
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@android:color/transparent"
             android:contentDescription="@null"
-            android:src="@drawable/splash_logo" />
+            android:src="@drawable/splash_logo_beta" />
     </RelativeLayout>
 
     <FrameLayout
@@ -38,13 +36,20 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent" >
+            
+           <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@null"
+                android:src="@drawable/splash_beta" />
 
-            <ImageButton
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentTop="true"
-                android:background="@android:color/transparent"
                 android:contentDescription="@null"
                 android:src="@drawable/splash_prefeitura" />
 
@@ -54,10 +59,9 @@
                 android:layout_alignParentBottom="true"
                 android:gravity="center" >
 
-                <ImageButton
+                <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@android:color/transparent"
                     android:contentDescription="@null"
                     android:src="@drawable/splash_assinaturas" />
             </RelativeLayout>
