@@ -42,7 +42,7 @@ public class TutorialFragment extends Fragment {
 		
 		tutorialButtom =  (Button) contentView.findViewById(R.id.buttom_tutorial_ok_entendi);
 		
-		if(imageResource == R.drawable.tutorial_6) {
+		if(imageResource == R.drawable.tutorial_100) {
 			viewTutorialButtom.setVisibility(View.VISIBLE);
 			tutorialButtom.setOnClickListener(new Button.OnClickListener() {
 				@Override
