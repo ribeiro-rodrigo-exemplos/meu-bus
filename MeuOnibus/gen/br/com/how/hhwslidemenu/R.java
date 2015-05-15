@@ -401,8 +401,8 @@ public final class R {
 		public static final int icon = 0x7f0c003b;
 		public static final int ifRoom = 0x7f0c002b;
 		public static final int image = 0x7f0c0038;
-		public static final int item_list_hhwslidemenu_icon = 0x7f0c00b0;
-		public static final int item_list_hhwslidemenu_name = 0x7f0c00b1;
+		public static final int item_list_hhwslidemenu_icon = 0x7f0c00b1;
+		public static final int item_list_hhwslidemenu_name = 0x7f0c00b2;
 		public static final int listMode = 0x7f0c0021;
 		public static final int list_item = 0x7f0c003a;
 		public static final int middle = 0x7f0c0032;
