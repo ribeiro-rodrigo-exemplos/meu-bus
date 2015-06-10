@@ -3,7 +3,7 @@
 
     <string name="app_name">Meu Onibus</string>
     <!-- Nome da app embaixo da ícone -->
-    <string name="app_name_in_device">Meu Ônibus - Beta</string>
+    <string name="app_name_in_device">Meu Ônibus</string>
 
     <!-- MENU -->
     <string name="inicio">Início</string>
@@ -47,11 +47,11 @@
     <string name="nao_foi_possivel_obter_previsao">Não foi possível obter a previsão de chegada do onibus.</string>
     <string name="nao_foi_possivel_localizar_pontos">Não foi possível localizar pontos no endereço pesquisado.</string>
     <string name="nao_foi_possivel_localizar_pontos_na_sua_localizacao">Não foi possível localizar pontos na sua localização.</string>
-    <string name="nao_foi_possivel_localizar_linhas">Sem previsão de linhas no momento.</string>
+    <string name="nao_foi_possivel_localizar_linhas">Não foi possível localizar linhas do ponto.</string>
     <string name="sentido">SENTIDO</string>
     <string name="veiculo">VEÍCULO</string>
     <string name="assunto">Assunto</string>
-    <string name="comentario">Comentário</string>
+    <string name="comentario">Contribua para a melhoria deste aplicativo, deixe seu comentário e sugestão. Em caso de dúvidas sobre como utilizar este aplicativo, acesse a postagem AJUDA no portal de Notícias deste aplicativo ou ligue para o número 156.</string>
     <string name="mensagem_sem_noticia">Não foi possível carregar as notícias.</string>
     <string name="mensagem_enviada">Mensagem enviada</string>
     <string name="mensagem_enviando">Enviando mensagem</string>
