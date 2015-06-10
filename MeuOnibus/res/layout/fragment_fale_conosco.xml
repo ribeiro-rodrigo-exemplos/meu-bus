@@ -48,7 +48,7 @@
             android:paddingTop="10dp"
             android:singleLine="false"
             android:textColor="@color/textDefault"
-            android:textColorHint="@color/silver"
+            android:textColorHint="@color/textDefault"
             android:textSize="15sp" />
     </LinearLayout>
 
