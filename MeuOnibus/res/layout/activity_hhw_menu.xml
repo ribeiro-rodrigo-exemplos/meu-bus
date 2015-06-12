@@ -27,7 +27,7 @@
                 android:contentDescription="@null"
                 android:paddingLeft="5dp"
                 android:paddingTop="5dp"
-                android:src="@drawable/mn_logo_prefeitura" />
+                android:src="@drawable/mn_logo_palmas" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -35,7 +35,7 @@
                 android:contentDescription="@null"
                 android:paddingLeft="30dp"
                 android:paddingTop="5dp"
-                android:src="@drawable/mn_logo_sindionibus" />
+                android:src="@drawable/mn_logo_seturb" />
         </LinearLayout>
 
         <ListView
