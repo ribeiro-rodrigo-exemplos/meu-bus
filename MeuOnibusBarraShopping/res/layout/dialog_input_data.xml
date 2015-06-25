@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp" >
+
+    <TextView
+        android:id="@+id/dialog_input_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@null"
+        android:textColor="@color/textDefault"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/dialog_input_edit_text_nome"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/digite_aqui"
+        android:inputType="text"
+        android:maxLength="400"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/textDefault"
+        android:textColorHint="@color/silver"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <com.neopixl.pixlui.components.button.Button
+            android:id="@+id/dialog_input_negative_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@color/silver"
+            android:gravity="center"
+            android:text="@string/cancelar"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            pixlui:typeface="FontCustom1.otf" />
+
+        <com.neopixl.pixlui.components.button.Button
+            android:id="@+id/dialog_input_positive_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/verdeLimao"
+            android:gravity="center"
+            android:text="@string/salvar"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            pixlui:typeface="FontCustom1.otf" />
+    </LinearLayout>
+
+</LinearLayout>

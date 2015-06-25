@@ -1,0 +1,1 @@
+package br.com.m2m.meuonibuscommons.handlers;import java.util.ArrayList;import android.os.Handler;import br.com.m2m.meuonibuscommons.models.LinhaOnibus;public class LinhaOnibusHandler extends Handler {	public void setLinha(LinhaOnibus linha) {	}	public void setLinhasOnibus(ArrayList<LinhaOnibus> linhas) {	}	public void setErro(Throwable e) {	}}

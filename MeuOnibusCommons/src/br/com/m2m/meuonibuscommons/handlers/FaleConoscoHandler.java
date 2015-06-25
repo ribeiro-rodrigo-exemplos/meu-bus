@@ -1,0 +1,1 @@
+package br.com.m2m.meuonibuscommons.handlers;import android.os.Handler;public class FaleConoscoHandler extends Handler {	public void setRetorno(boolean flag) {	}	public void setErro(Throwable e) {	}}

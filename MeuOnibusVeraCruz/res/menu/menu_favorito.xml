@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="br.com.m2m.meuonibus.Lista_linhas_Activity" >
+
+    <item
+        android:id="@+id/action_editar"
+        android:icon="@drawable/ac_editar"
+        app:showAsAction="never"
+        android:visible="false"
+        android:title="@string/editar"/>
+    
+    <item
+        android:id="@+id/action_favorito"
+        android:icon="@drawable/ac_favorito_on"
+        android:title="@string/favoritar"
+        app:showAsAction="always"/>
+
+</menu>
