@@ -40,7 +40,7 @@
     <string name="voce_realmente_deseja_apagar_itens">Você realmente deseja apagar o(s) ponto(s) selecionado(s)?</string>
     <string name="voce_nao_selecionou">Selecione pelo menos um ponto para ser apagado.</string>
     <string name="favoritos_vazio">Você ainda não adicionou nenhum ponto de ônibus aos favoritos</string>
-    <string name="desfavoritar_confirmacao">Você realmente deseja desfavoritar esse ponto?</string>
+    <string name="desfavoritar_confirmacao">Você deseja realmente remover esse ponto dos favoritos?</string>
     <string name="digite_endereco">Digite o endereço</string>
     <string name="noticias_vazia">Não há notícias no momento</string>
     <string name="nao_foi_possivel_obter_trajeto">Não foi possível obter o trajeto da linha.</string>
