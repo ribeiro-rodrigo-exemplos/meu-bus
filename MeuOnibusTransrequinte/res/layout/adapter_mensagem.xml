@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingBottom="0dp"
+    android:paddingTop="0dp" >
+
+    <TextView
+        android:id="@+id/text_msg_adapter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="30dp"
+        android:text="@string/nao_foi_possivel_localizar_linhas"
+        android:textColor="@color/textDefault"
+        android:textSize="14sp" />
+
+</RelativeLayout>

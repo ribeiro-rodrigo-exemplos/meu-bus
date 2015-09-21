@@ -34,7 +34,7 @@
             android:value="@integer/google_play_services_version" />
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAZ-dTcDm_YSZG8t0bVlypTZ6MVwhQNjlM" />
+            android:value="AIzaSyCIWPdNx7eGLEL8le_GyamKeka9R6f74_Y" />
 
         <activity
 			android:name="br.com.m2m.meuonibus.limeirense.activities.SplashActivity"
