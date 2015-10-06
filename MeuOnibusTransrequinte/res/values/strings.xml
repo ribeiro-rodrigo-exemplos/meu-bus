@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Meu Ônibus Transrequinte</string>
+    <string name="app_name">Meu Ônibus MOB</string>
     <!-- Nome da app embaixo da ícone -->
-    <string name="app_name_in_device">Meu Ônibus Transrequinte</string>
+    <string name="app_name_in_device">Meu Ônibus MOB</string>
 
     <!-- MENU -->
     <string name="inicio">Início</string>
@@ -51,7 +51,7 @@
     <string name="sentido">SENTIDO</string>
     <string name="veiculo">VEÍCULO</string>
     <string name="assunto">Assunto</string>
-    <string name="comentario">Contribua para a melhoria deste aplicativo deixando o seu comentário e sugestão. Em caso de dúvidas sobre como utilizar, acesse a postagem AJUDA no portal de Notícias deste aplicativo ou ligue para a central 156 ou no número 4005-0956 (Alô Sindiônibus).</string>
+    <string name="comentario">Contribua para a melhoria deste aplicativo deixando o seu comentário e sugestão. Em caso de dúvidas sobre como utilizar, acesse a postagem AJUDA no portal de Notícias deste aplicativo.</string>
     <string name="mensagem_sem_noticia">Não foi possível carregar as notícias.</string>
     <string name="mensagem_enviada">Mensagem enviada</string>
     <string name="mensagem_enviando">Enviando mensagem</string>

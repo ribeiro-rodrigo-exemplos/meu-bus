@@ -27,15 +27,15 @@
                 android:contentDescription="@null"
                 android:paddingLeft="5dp"
                 android:paddingTop="5dp"
-                android:src="@drawable/mn_logo_princesa_tecela" />
+                android:src="@drawable/mn_logo_gov_maranhao" />
 
-         <!--  <ImageView
+         <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:contentDescription="@null"
-                android:paddingLeft="30dp"
+                android:paddingLeft="15dp"
                 android:paddingTop="5dp"
-                android:src="@drawable/mn_logo_sindionibus" /> -->
+                android:src="@drawable/mn_logo_simetrans" />
         </LinearLayout>
 
         <ListView

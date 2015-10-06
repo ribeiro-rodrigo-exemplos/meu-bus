@@ -26,7 +26,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:contentDescription="@null"
-            android:src="@drawable/splash_logo_beta" />
+            android:src="@drawable/splash_logo" />
     </RelativeLayout>
 
     <FrameLayout
@@ -37,13 +37,13 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" >
             
-           <ImageView
+     <!--       <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
                 android:contentDescription="@null"
-                android:src="@drawable/splash_beta" />
+                android:src="@drawable/splash_beta" /> -->
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -63,7 +63,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:contentDescription="@null"
-                    android:src="@drawable/splash_assinatura_transrequinte" />
+                    android:src="@drawable/splash_assinatura_simetrans" />
             </RelativeLayout>
         </RelativeLayout>
     </FrameLayout>
