@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="br.com.m2m.meuonibus.baryon"
-    android:versionCode="3"
+    android:versionCode="1"
     android:versionName="1.0" >
 
     <uses-sdk
@@ -34,7 +34,7 @@
             android:value="@integer/google_play_services_version" />
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAZ-dTcDm_YSZG8t0bVlypTZ6MVwhQNjlM" />
+            android:value="AIzaSyCLcCvhL1MFjYsGa97s4JK2Si_n4dJNCQ0" />
 
         <activity
 			android:name="br.com.m2m.meuonibus.baryon.activities.SplashActivity"

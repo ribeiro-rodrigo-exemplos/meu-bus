@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="br.com.m2m.meuonibus.transrequinte"
-    android:versionCode="2"
+    android:versionCode="3"
     android:versionName="1.0" >
 
     <uses-sdk
@@ -34,7 +34,7 @@
             android:value="@integer/google_play_services_version" />
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyADUvlrSVGVPwsiT7kP2yxXVWj_Y36zfCw" />
+            android:value="AIzaSyAbyv0iv8pKOLG0vL8TqD4814KxgXzbesY" />
 
         <activity
 			 android:name="br.com.m2m.meuonibus.transrequinte.activities.SplashActivity"

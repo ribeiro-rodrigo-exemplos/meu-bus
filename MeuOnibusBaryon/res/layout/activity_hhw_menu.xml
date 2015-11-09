@@ -21,21 +21,21 @@
             android:background="#fff"
             android:orientation="horizontal" >
 
-            <ImageView
+  		  <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:contentDescription="@null"
-                android:paddingLeft="5dp"
+                android:paddingLeft="10dp"
                 android:paddingTop="5dp"
-                android:src="@drawable/mn_logo_prefeitura" />
+                android:src="@drawable/mn_logo_caldas_novas" />
 
           <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:contentDescription="@null"
-                android:paddingLeft="30dp"
+                android:paddingLeft="20dp"
                 android:paddingTop="5dp"
-                android:src="@drawable/mn_logo_sindionibus" />
+                android:src="@drawable/mn_logo_bt21" />
         </LinearLayout>
 
         <ListView

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="br.com.m2msolutions.meuonibus.limeira"
-    android:versionCode="2"
+    android:versionCode="4"
     android:versionName="1.0" >
 
     <uses-sdk
@@ -34,8 +34,8 @@
             android:value="@integer/google_play_services_version" />
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCIWPdNx7eGLEL8le_GyamKeka9R6f74_Y" />
-
+            android:value="AIzaSyCLcCvhL1MFjYsGa97s4JK2Si_n4dJNCQ0" /><!--  CHAVE DO PROJETO BT-21 -->
+			
         <activity
 			android:name="br.com.m2msolutions.meuonibus.limeira.activities.SplashActivity"
 			android:configChanges="orientation|keyboardHidden|screenSize"
