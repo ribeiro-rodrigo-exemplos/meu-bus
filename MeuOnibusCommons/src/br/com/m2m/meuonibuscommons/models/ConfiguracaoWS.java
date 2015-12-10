@@ -2,7 +2,7 @@ package br.com.m2m.meuonibuscommons.models;
 
 public class ConfiguracaoWS {
 	
-	private String usuário;
+	private String usuario;
 	private String password;
 	private String url;
 	private String pontoOnibus;
@@ -56,11 +56,11 @@ public class ConfiguracaoWS {
 	public void setEnvioMsg(String envioMsg) {
 		this.envioMsg = envioMsg;
 	}
-	public String getUsuário() {
-		return usuário;
+	public String getUsuario() {
+		return usuario;
 	}
-	public void setUsuário(String usuário) {
-		this.usuário = usuário;
+	public void setUsuario(String usuario) {
+		this.usuario = usuario;
 	}
 	public String getPassword() {
 		return password;
