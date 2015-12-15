@@ -24,7 +24,7 @@ public class Util {
             
             properties.load(rawResourse);
             
-            configuracaoWS.setUsuário(properties.getProperty("user"));
+            configuracaoWS.setUsuario(properties.getProperty("user"));
             configuracaoWS.setPassword(properties.getProperty("password"));
             configuracaoWS.setUrl(properties.getProperty("base.url"));
             configuracaoWS.setPontoOnibus(properties.getProperty("ponto_de_onibus"));

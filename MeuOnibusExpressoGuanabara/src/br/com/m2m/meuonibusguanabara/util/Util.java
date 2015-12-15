@@ -1,12 +1,12 @@
-package br.com.m2m.meuonibus.assetur.util;
+package br.com.m2m.meuonibusguanabara.util;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
 import android.content.Context;
-import br.com.m2m.meuonibus.assetur.R;
 import br.com.m2m.meuonibuscommons.models.ConfiguracaoWS;
+import br.com.m2m.meuonibusguanabara.R;
 
 public class Util {
 	

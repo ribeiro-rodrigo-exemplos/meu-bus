@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Meu Ônibus Fortaleza</string>
+    <string name="app_name">Meu Ônibus Expresso Guanabara</string>
     <!-- Nome da app embaixo da ícone -->
-    <string name="app_name_in_device">Meu Ônibus Fortaleza</string>
+    <string name="app_name_in_device">Meu Ônibus Expresso Guanabara</string>
 
     <!-- MENU -->
     <string name="inicio">Início</string>

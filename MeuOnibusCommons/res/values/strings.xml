@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Meu Onibus</string>
+    <string name="app_name">Meu Ônibus Expresso Guanabara</string>
     <!-- Nome da app embaixo da ícone -->
-    <string name="app_name_in_device">Meu Ônibus</string>
+    <string name="app_name_in_device">Meu Ônibus Expresso Guanabara</string>
 
     <!-- MENU -->
     <string name="inicio">Início</string>
@@ -40,7 +40,7 @@
     <string name="voce_realmente_deseja_apagar_itens">Você realmente deseja apagar o(s) ponto(s) selecionado(s)?</string>
     <string name="voce_nao_selecionou">Selecione pelo menos um ponto para ser apagado.</string>
     <string name="favoritos_vazio">Você ainda não adicionou nenhum ponto de ônibus aos favoritos</string>
-    <string name="desfavoritar_confirmacao">Você realmente deseja desfavoritar esse ponto?</string>
+    <string name="desfavoritar_confirmacao">Você deseja realmente remover esse ponto dos favoritos?</string>
     <string name="digite_endereco">Digite o endereço</string>
     <string name="noticias_vazia">Não há notícias no momento</string>
     <string name="nao_foi_possivel_obter_trajeto">Não foi possível obter o trajeto da linha.</string>
@@ -51,7 +51,7 @@
     <string name="sentido">SENTIDO</string>
     <string name="veiculo">VEÍCULO</string>
     <string name="assunto">Assunto</string>
-    <string name="comentario">Contribua para a melhoria deste aplicativo deixando o seu comentário e sugestão. Em caso de dúvidas sobre como utilizar, acesse a postagem AJUDA no portal de Notícias deste aplicativo ou ligue para o número 156.</string>
+    <string name="comentario">Contribua para a melhoria deste aplicativo deixando o seu comentário e sugestão.</string>
     <string name="mensagem_sem_noticia">Não foi possível carregar as notícias.</string>
     <string name="mensagem_enviada">Mensagem enviada</string>
     <string name="mensagem_enviando">Enviando mensagem</string>
