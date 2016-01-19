@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Notícias</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+        <style>
+
+            body {
+                margin: 0;
+            }
+
+            #titulo {
+                float: left; background: #7dafa7; width: 100%; padding: 20px 0 20px 0;
+            }
+
+            #titulo img {
+                float: left; color: #fff; width: 9%;
+            }
+
+            #titulo span {
+                float: left; color: #fff; width: 83%; font-family: Arial; font-size: 1.1em; line-height: 1.2em; margin: 0 0 0 4%; background: none;
+            }
+
+            #imagem {
+                float: left; background: none; width: 100%;
+            }
+
+            #imagem img {
+                float: left; width: 100%;
+            }
+
+            #data {
+                float: left; color: #5c9b91; width: 90%; padding: 30px 5% 20px 5%; font-family: Arial; font-size: 1.0em;
+            }
+
+            #separador {
+                float: left; width: 90%; padding: 0 5% 0 5%;
+            }
+
+            #separador img {
+                float: left; width: 100%;
+            }
+
+            #chamada {
+                float: left; color: #555555; width: 90%; padding: 20px 5% 30px 5%; font-family: Arial; font-size: 1.1em; font-weight: bold;
+            }
+
+            #texto {
+                float: left; color: #666666; width: 90%; padding: 10px 5% 10px 5%; font-family: Arial; font-size: 1em; line-height: 1.2em; margin: 0 0 50px 0;
+            }
+
+        </style>
+
+    </head>
+
+	<body>
+	
+	 	<div id="titulo">
+            <img src="file:///android_asset/img/setinha.png" />
+            <span>
+                %{title}
+            </span>
+        </div>
+        
+		<!-- DIV IMAGEM -->
+		%{img}
+
+        <div id="data">
+            %{datetime_with_format}
+        </div>
+        
+          <div id="separador">
+            <img src="file:///android_asset/img/separador.png" />
+        </div>
+
+		<!-- %{text} -->
+		<div id="texto">
+			%{text}
+		</div>
+
+	</body>
+
+</html>
