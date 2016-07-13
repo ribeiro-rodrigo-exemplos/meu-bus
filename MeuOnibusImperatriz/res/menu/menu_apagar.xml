@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="br.com.m2m.meuonibus.Lista_linhas_Activity" >
+
+    <item
+        android:id="@+id/action_apagar"
+        android:icon="@drawable/ac_lixeira_on"
+        android:title="@string/apagar"
+        app:showAsAction="always"/>
+
+</menu>

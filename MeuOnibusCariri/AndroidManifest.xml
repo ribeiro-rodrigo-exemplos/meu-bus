@@ -34,11 +34,11 @@
             android:value="@integer/google_play_services_version" />
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCLcCvhL1MFjYsGa97s4JK2Si_n4dJNCQ0" /> <!-- GOOGLE PLACE MEU ONIBUS BYRON -->
+            android:value="AIzaSyCLcCvhL1MFjYsGa97s4JK2Si_n4dJNCQ0" /> <!-- GOOGLE PLACE MEU ONIBUS BYRON / MTU / CARIRI / MARACANAU / LIMEIRA -->
 
        	
         <activity
-			android:name="br.com.hhw.startapp.activities.SplashStartAppActivity"
+			android:name="br.com.m2m.meuonibus.cariri.activities.SplashActivity"
 			android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/app_name_in_device"
             android:screenOrientation="portrait"
@@ -50,7 +50,7 @@
             </intent-filter>
         </activity>
         <activity
-			android:name="br.com.hhw.startapp.activities.MainStartAppActivity"
+			android:name="br.com.m2m.meuonibus.cariri.activities.MainActivity"
 			android:label="@string/app_name"
             android:screenOrientation="portrait" >
             <intent-filter>
@@ -58,23 +58,23 @@
             </intent-filter>
         </activity>
         <activity
-			android:name="br.com.hhw.startapp.activities.TutorialStartAppActivity"
+			android:name="br.com.m2m.meuonibus.cariri.activities.TutorialActivity"
 			android:label="@string/home"
             android:screenOrientation="portrait"
             android:theme="@style/FullscreenTheme" >
         </activity>
         <activity
-			android:name="br.com.m2m.meuonibus.activities.ListaLinhasActivity"
+			android:name="br.com.m2m.meuonibus.cariri.activities.ListaLinhasActivity"
 			android:label="@string/title_activity_lista_linhas"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-			android:name="br.com.m2m.meuonibus.activities.OnibusDetalheActivity"
+			android:name="br.com.m2m.meuonibus.cariri.activities.OnibusDetalheActivity"
 			android:label="@string/app_name"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-			android:name="br.com.m2m.meuonibus.activities.NoticiaDetalheActivity"
+			android:name="br.com.m2m.meuonibus.cariri.activities.NoticiaDetalheActivity"
 			android:label="@string/app_name"
             android:screenOrientation="portrait" >
         </activity>

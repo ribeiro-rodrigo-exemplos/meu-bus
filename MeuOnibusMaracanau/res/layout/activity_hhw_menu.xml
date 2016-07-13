@@ -21,13 +21,13 @@
             android:background="#fff"
             android:orientation="horizontal" >
 
-         <!--    <ImageView
+         <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:contentDescription="@null"
                 android:paddingLeft="5dp"
                 android:paddingTop="5dp"
-                android:src="@drawable/mn_logo_mtu" /> -->
+                android:src="@drawable/mn_logo_maracanau" />
 
           <ImageView
                 android:layout_width="wrap_content"
@@ -35,7 +35,7 @@
                 android:contentDescription="@null"
                 android:paddingLeft="40dp"
                 android:paddingTop="5dp"
-                android:src="@drawable/mn_logo_mtu" />
+                android:src="@drawable/mn_logo_maracanau_brasao" />
         </LinearLayout>
 
         <ListView

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Meu Ônibus Princesa Tacelã</string>
+    <string name="app_name">Meu Ônibus Americana</string>
     <!-- Nome da app embaixo da ícone -->
-    <string name="app_name_in_device">Meu Ônibus Princesa Tacelã</string>
+    <string name="app_name_in_device">Meu Ônibus Americana</string>
 
     <!-- MENU -->
     <string name="inicio">Início</string>

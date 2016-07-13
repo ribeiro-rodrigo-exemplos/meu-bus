@@ -21,21 +21,21 @@
             android:background="#fff"
             android:orientation="horizontal" >
 
-           <!--  <ImageView
+     	<ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:contentDescription="@null"
-                android:paddingLeft="15dp"
-                android:paddingTop="10dp"
-                android:src="@drawable/mn_logo_princesa_tecela" /> -->
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:src="@drawable/mn_logo_americana" /> -->
 
           <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:contentDescription="@null"
-                android:paddingLeft="25dp"
+                android:paddingLeft="40dp"
                 android:paddingTop="5dp"
-                android:src="@drawable/mn_logo_princesa_tecela" />
+                android:src="@drawable/mn_logo_brasao" />
         </LinearLayout>
 
         <ListView
