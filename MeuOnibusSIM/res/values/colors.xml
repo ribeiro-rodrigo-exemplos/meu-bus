@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="silver">#CCCCCC</color>
+    <color name="green">#5c9b91</color>
+    <color name="green_border">#7DAFA7</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="primaryColor">#2196F3</color>
+    <color name="primaryColorDark">#0D47A1</color>
+    <color name="blue">#6594df</color>
+    <color name="stroke_radius">#6594df</color>
+    <color name="fill_radius">#ACCCFF</color>
+    <color name="blue_light">#ff33b5e5</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="splash">#CCCCCC</color>
+    <color name="textDefault">#444444</color>
+    <color name="verdeLimao">#6CD574</color>
+    <color name="dark">#444444</color>
+    <color name="polylineColor">#00cccc</color>
+    
+</resources>
