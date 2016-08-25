@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="br.com.m2m.meuonibus"
-    android:versionCode="3"
+    android:versionCode="5"
     android:versionName="1.0" >
 
     <uses-sdk
@@ -74,6 +74,25 @@
         </activity>
         <activity
 			android:name="br.com.m2m.meuonibus.activities.NoticiaDetalheActivity"
+			android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+			android:name="br.com.m2m.meuonibus.activities.RecargaOnlinePopupActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+			android:name="br.com.m2m.meuonibus.activities.RecargaOnlineActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+			android:name="br.com.m2m.meuonibus.activities.PontosRecargaActivity"
+			android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+			android:name="br.com.m2m.meuonibus.activities.FiltroRecargaActivity"
 			android:label="@string/app_name"
             android:screenOrientation="portrait" >
         </activity>

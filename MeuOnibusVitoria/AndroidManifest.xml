@@ -78,6 +78,26 @@
 			android:label="@string/app_name"
             android:screenOrientation="portrait" >
         </activity>
+        
+        <activity
+			android:name="br.com.m2m.meuonibus.vitoria.activities.RecargaOnlinePopupActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+			android:name="br.com.m2m.meuonibus.vitoria.activities.RecargaOnlineActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+			android:name="br.com.m2m.meuonibus.vitoria.activities.PontosRecargaActivity"
+			android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+			android:name="br.com.m2m.meuonibus.vitoria.activities.FiltroRecargaActivity"
+			android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
     </application>
 
 </manifest>

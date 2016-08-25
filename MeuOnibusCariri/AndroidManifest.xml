@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="br.com.m2m.meuonibus.cariri"
-    android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionCode="2"
+    android:versionName="2.0" >
 
     <uses-sdk
         android:minSdkVersion="9"
@@ -75,6 +75,25 @@
         </activity>
         <activity
 			android:name="br.com.m2m.meuonibus.cariri.activities.NoticiaDetalheActivity"
+			android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+			android:name="br.com.m2m.meuonibus.cariri.activities.RecargaOnlinePopupActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+			android:name="br.com.m2m.meuonibus.cariri.activities.RecargaOnlineActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+			android:name="br.com.m2m.meuonibus.cariri.activities.PontosRecargaActivity"
+			android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+			android:name="br.com.m2m.meuonibus.cariri.activities.FiltroRecargaActivity"
 			android:label="@string/app_name"
             android:screenOrientation="portrait" >
         </activity>

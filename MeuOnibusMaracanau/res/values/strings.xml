@@ -75,6 +75,21 @@
     <string name="opcao_1k">1 km</string>
     <string name="opcao_2k">2 km</string>
 
+    
+          <!-- Recarga -->
+    <string name="recarga">Recarga</string>
+    <string name="venda_credito">Venda de Crédito</string>
+    <string name="pontos_recarga">Pontos de Recarga</string>
+    <string name="recarga_online">Recarga on-line</string>
+    <string name="titulo_recarga_online">Atenção</string>
+    <string name="texto_recarga_online">Você está sendo direcionado para um ambiente seguro para realizar a sua recarga.</string>
+    <string name="entendi">Ok, Entendi</string>
+    
+    <!-- Filtros -->
+    <string name="filtro_todos">Ver todos</string>
+    <string name="filtro_credito">Venda de Crédito</string>
+    <string name="filtro_recarga">Recarga</string>
+    <string name="filtrar">Filtrar</string>
     <!-- outros -->
 
 </resources>

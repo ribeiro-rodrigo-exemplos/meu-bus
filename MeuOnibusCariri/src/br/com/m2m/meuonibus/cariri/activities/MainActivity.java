@@ -2,10 +2,6 @@ package br.com.m2m.meuonibus.cariri.activities;
 
 import java.util.ArrayList;
 
-import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.location.places.Places;
-
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -22,7 +18,12 @@ import br.com.m2m.meuonibus.cariri.fragments.FaleConoscoFragment;
 import br.com.m2m.meuonibus.cariri.fragments.HomeFragment;
 import br.com.m2m.meuonibus.cariri.fragments.MeusPontosFragment;
 import br.com.m2m.meuonibus.cariri.fragments.NoticiasFragment;
+import br.com.m2m.meuonibus.cariri.fragments.PontosRecargaFragment;
 import br.com.m2m.meuonibuscommons.adapters.PlaceAutocompleteAdapter;
+
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.location.places.Places;
 
 public class MainActivity extends MenuStartAppActivity implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
 	
@@ -42,9 +43,12 @@ public class MainActivity extends MenuStartAppActivity implements GoogleApiClien
 //					.newInstance("Planejador de viagens"), getResources().getDrawable(R.drawable.mn_item_planejador)));
 			menuItems.add(new HHWMenuItem(getString(R.string.favoritos), new MeusPontosFragment(), getResources().getDrawable(R.drawable.mn_item_meuspontos)));
 			menuItems.add(new HHWMenuItem(getString(R.string.noticias), new NoticiasFragment(), getResources().getDrawable(R.drawable.mn_item_noticias)));
+			menuItems.add(new HHWMenuItem(getString(R.string.recarga_online), RecargaOnlinePopupActivity.class, getResources().getDrawable(R.drawable.mn_item_recarga_online)));
+			menuItems.add(new HHWMenuItem(getString(R.string.pontos_recarga), new PontosRecargaFragment(), getResources().getDrawable(R.drawable.mn_item_ponto_recarga)));
 			menuItems.add(new HHWMenuItem(getString(R.string.fale_conosco), new FaleConoscoFragment(), getResources().getDrawable(R.drawable.mn_item_faleconosco)));
 			menuItems.add(new HHWMenuItem(getString(R.string.ajustes), new AjustesFragment(), getResources().getDrawable(R.drawable.mn_item_ajustes)));
 			menuItems.add(new HHWMenuItem(getString(R.string.como_funciona), TutorialActivity.class, getResources().getDrawable(R.drawable.mn_item_comofunciona)));
+
 
 			slideMenu = new HHWSlideMenu(this, menuItems);
 		} else {

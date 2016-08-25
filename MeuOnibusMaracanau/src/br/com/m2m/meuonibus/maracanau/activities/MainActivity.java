@@ -22,6 +22,9 @@ import br.com.m2m.meuonibus.maracanau.fragments.FaleConoscoFragment;
 import br.com.m2m.meuonibus.maracanau.fragments.HomeFragment;
 import br.com.m2m.meuonibus.maracanau.fragments.MeusPontosFragment;
 import br.com.m2m.meuonibus.maracanau.fragments.NoticiasFragment;
+import br.com.m2m.meuonibus.maracanau.activities.RecargaOnlinePopupActivity;
+import br.com.m2m.meuonibus.maracanau.activities.TutorialActivity;
+import br.com.m2m.meuonibus.maracanau.fragments.PontosRecargaFragment;
 import br.com.m2m.meuonibuscommons.adapters.PlaceAutocompleteAdapter;
 
 public class MainActivity extends MenuStartAppActivity implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
@@ -37,14 +40,18 @@ public class MainActivity extends MenuStartAppActivity implements GoogleApiClien
 			
 			ArrayList<HHWMenuItem> menuItems = new ArrayList<HHWMenuItem>();
 						
-			menuItems.add(new HHWMenuItem(getString(R.string.inicio), new HomeFragment(), getResources().getDrawable(R.drawable.mn_item_inicio)));
-//			menuItems.add(new HHWMenuItem(getString(R.string.planejador), fragment
-//					.newInstance("Planejador de viagens"), getResources().getDrawable(R.drawable.mn_item_planejador)));
-			menuItems.add(new HHWMenuItem(getString(R.string.favoritos), new MeusPontosFragment(), getResources().getDrawable(R.drawable.mn_item_meuspontos)));
-			menuItems.add(new HHWMenuItem(getString(R.string.noticias), new NoticiasFragment(), getResources().getDrawable(R.drawable.mn_item_noticias)));
-			menuItems.add(new HHWMenuItem(getString(R.string.fale_conosco), new FaleConoscoFragment(), getResources().getDrawable(R.drawable.mn_item_faleconosco)));
-			menuItems.add(new HHWMenuItem(getString(R.string.ajustes), new AjustesFragment(), getResources().getDrawable(R.drawable.mn_item_ajustes)));
-			menuItems.add(new HHWMenuItem(getString(R.string.como_funciona), TutorialActivity.class, getResources().getDrawable(R.drawable.mn_item_comofunciona)));
+			
+		menuItems.add(new HHWMenuItem(getString(R.string.inicio), new HomeFragment(), getResources().getDrawable(R.drawable.mn_item_inicio)));
+//		menuItems.add(new HHWMenuItem(getString(R.string.planejador), fragment
+//				.newInstance("Planejador de viagens"), getResources().getDrawable(R.drawable.mn_item_planejador)));
+		menuItems.add(new HHWMenuItem(getString(R.string.favoritos), new MeusPontosFragment(), getResources().getDrawable(R.drawable.mn_item_meuspontos)));
+		menuItems.add(new HHWMenuItem(getString(R.string.noticias), new NoticiasFragment(), getResources().getDrawable(R.drawable.mn_item_noticias)));
+		menuItems.add(new HHWMenuItem(getString(R.string.recarga_online), RecargaOnlinePopupActivity.class, getResources().getDrawable(R.drawable.mn_item_recarga_online)));
+		menuItems.add(new HHWMenuItem(getString(R.string.pontos_recarga), new PontosRecargaFragment(), getResources().getDrawable(R.drawable.mn_item_ponto_recarga)));
+		menuItems.add(new HHWMenuItem(getString(R.string.fale_conosco), new FaleConoscoFragment(), getResources().getDrawable(R.drawable.mn_item_faleconosco)));
+		menuItems.add(new HHWMenuItem(getString(R.string.ajustes), new AjustesFragment(), getResources().getDrawable(R.drawable.mn_item_ajustes)));
+		menuItems.add(new HHWMenuItem(getString(R.string.como_funciona), TutorialActivity.class, getResources().getDrawable(R.drawable.mn_item_comofunciona)));
+
 
 			slideMenu = new HHWSlideMenu(this, menuItems);
 		} else {

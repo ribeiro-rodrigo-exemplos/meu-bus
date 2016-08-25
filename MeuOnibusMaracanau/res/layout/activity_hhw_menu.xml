@@ -27,7 +27,7 @@
                 android:contentDescription="@null"
                 android:paddingLeft="5dp"
                 android:paddingTop="5dp"
-                android:src="@drawable/mn_logo_maracanau" />
+                android:src="@drawable/mn_logo_brasao_maracanau" />
 
           <ImageView
                 android:layout_width="wrap_content"
@@ -35,7 +35,7 @@
                 android:contentDescription="@null"
                 android:paddingLeft="40dp"
                 android:paddingTop="5dp"
-                android:src="@drawable/mn_logo_maracanau_brasao" />
+                android:src="@drawable/mn_logo_bus_maracanau" />
         </LinearLayout>
 
         <ListView

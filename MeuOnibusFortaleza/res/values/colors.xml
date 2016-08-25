@@ -18,5 +18,8 @@
     <color name="verdeLimao">#6CD574</color>
     <color name="dark">#444444</color>
     <color name="polylineColor">#00cccc</color>
+    <color name="darkGray">#747474</color>
+    <color name="pontoRecarga">#FF443D</color>
+    <color name="pontoAtualizacao">#9ECE00</color>
     
 </resources>
