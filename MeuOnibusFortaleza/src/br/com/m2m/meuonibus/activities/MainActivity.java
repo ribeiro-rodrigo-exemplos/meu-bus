@@ -18,6 +18,8 @@ import br.com.m2m.meuonibus.fragments.FaleConoscoFragment;
 import br.com.m2m.meuonibus.fragments.HomeFragment;
 import br.com.m2m.meuonibus.fragments.MeusPontosFragment;
 import br.com.m2m.meuonibus.fragments.NoticiasFragment;
+import br.com.m2m.meuonibus.fragments.PontosRecargaFragment;
+import br.com.m2m.meuonibus.models.FiltroRecarga;
 import br.com.m2m.meuonibuscommons.adapters.PlaceAutocompleteAdapter;
 
 import com.google.android.gms.common.ConnectionResult;
@@ -42,6 +44,8 @@ public class MainActivity extends MenuStartAppActivity implements GoogleApiClien
 //					.newInstance("Planejador de viagens"), getResources().getDrawable(R.drawable.mn_item_planejador)));
 			menuItems.add(new HHWMenuItem(getString(R.string.favoritos), new MeusPontosFragment(), getResources().getDrawable(R.drawable.mn_item_meuspontos)));
 			menuItems.add(new HHWMenuItem(getString(R.string.noticias), new NoticiasFragment(), getResources().getDrawable(R.drawable.mn_item_noticias)));
+			menuItems.add(new HHWMenuItem(getString(R.string.recarga_online), RecargaOnlinePopupActivity.class, getResources().getDrawable(R.drawable.mn_item_recarga_online)));
+			menuItems.add(new HHWMenuItem(getString(R.string.pontos_recarga), new PontosRecargaFragment(), getResources().getDrawable(R.drawable.mn_item_ponto_recarga)));
 			menuItems.add(new HHWMenuItem(getString(R.string.fale_conosco), new FaleConoscoFragment(), getResources().getDrawable(R.drawable.mn_item_faleconosco)));
 			menuItems.add(new HHWMenuItem(getString(R.string.ajustes), new AjustesFragment(), getResources().getDrawable(R.drawable.mn_item_ajustes)));
 			menuItems.add(new HHWMenuItem(getString(R.string.como_funciona), TutorialActivity.class, getResources().getDrawable(R.drawable.mn_item_comofunciona)));
@@ -62,6 +66,8 @@ public class MainActivity extends MenuStartAppActivity implements GoogleApiClien
 		if (mGoogleApiClient == null) {
 			rebuildGoogleApiClient();
 		}
+		FiltroRecarga.setFiltroRecarga(true);
+		FiltroRecarga.setFiltroCredito(true);
 	}
 	
 	private void setCustomActionBar() {
