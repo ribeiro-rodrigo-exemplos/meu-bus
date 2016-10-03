@@ -26,7 +26,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:contentDescription="@null"
-            android:src="@drawable/splash_logo" />
+            android:src="@drawable/splash_logo_v2" />
     </RelativeLayout>
 
     <FrameLayout
@@ -63,7 +63,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:contentDescription="@null"
-                    android:src="@drawable/splash_assinatura" />
+                    android:src="@drawable/splash_assinatura_vitoria_v2" />
             </RelativeLayout>
         </RelativeLayout>
     </FrameLayout>
