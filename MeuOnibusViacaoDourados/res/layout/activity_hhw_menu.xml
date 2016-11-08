@@ -35,7 +35,7 @@
                 android:contentDescription="@null"
                 android:paddingLeft="30dp"
                 android:paddingTop="5dp"
-                android:src="@drawable/mn_logo_viacao_modelo" />
+                android:src="@drawable/mn_logo_viacao_dourados" />
         </LinearLayout>
 
         <ListView
