@@ -8,6 +8,32 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical" >
+        
+        <EditText
+            android:id="@+id/email_mensagem"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:hint="@string/email"
+            android:inputType="text"
+            android:maxLength="400"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:textColor="@color/textDefault"
+            android:textColorHint="@color/silver"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/email_separator"
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:background="@drawable/separator_repeat"
+            android:visibility="gone" />
 
         <EditText
             android:id="@+id/assunto_mensagem"
