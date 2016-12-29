@@ -1,0 +1,411 @@
+!SESSION 2016-12-20 17:00:11.058 -----------------------------------------------
+eclipse.buildId=4.6.1.M20160907-1200
+java.version=1.8.0_65
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.android.product -keyring /Users/florasaramago/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.android.product -keyring /Users/florasaramago/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2016-12-20 17:00:45.395
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.andmore.ddms 4 0 2016-12-20 17:00:55.013
+!MESSAGE DDMS files not found: /Applications/Eclipse.app/Contents/MacOS/platform-tools/adb /Applications/Eclipse.app/Contents/MacOS/platform-tools/hprof-conv /Applications/Eclipse.app/Contents/MacOS/tools/traceview 
+
+!ENTRY org.eclipse.ui.workbench 4 2 2016-12-20 17:00:59.912
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 1
+org.eclipse.core.runtime.CoreException: Executable extension definition for "class" not found.
+	at org.eclipse.core.internal.registry.ConfigurationElement.throwException(ConfigurationElement.java:62)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:222)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin$1.run(WorkbenchPlugin.java:291)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:52)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:286)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:53)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$55.run(Workbench.java:2829)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.equinox.registry 4 1 2016-12-20 17:00:59.915
+!MESSAGE Executable extension definition for "class" not found.
+!SUBENTRY 1 org.eclipse.equinox.registry 4 1 2016-12-20 17:00:59.915
+!MESSAGE Executable extension definition for "class" not found.
+
+!ENTRY org.eclipse.ui 4 0 2016-12-20 17:00:59.958
+!MESSAGE Unable to execute early startup code for the org.eclipse.ui.IStartup extension contributed by the 'org.eclipse.sequoyah.device.framework.wizard' plug-in.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Executable extension definition for "class" not found.
+	at org.eclipse.core.internal.registry.ConfigurationElement.throwException(ConfigurationElement.java:62)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:222)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin$1.run(WorkbenchPlugin.java:291)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:52)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:286)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:53)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$55.run(Workbench.java:2829)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.equinox.registry 4 1 2016-12-20 17:00:59.958
+!MESSAGE Executable extension definition for "class" not found.
+
+!ENTRY org.eclipse.core.resources 4 4 2016-12-20 17:01:15.531
+!MESSAGE Exception occurred while saving project preferences: /appcompat_v7/.settings/org.eclipse.jdt.core.prefs.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: A resource already exists on disk '/Users/florasaramago/moa/meu-onibus-android/appcompat_v7/.settings'.
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:47)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:93)
+	at org.eclipse.core.internal.resources.ProjectPreferences$1.run(ProjectPreferences.java:634)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.ProjectPreferences.save(ProjectPreferences.java:660)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalFlush(EclipsePreferences.java:431)
+	at org.eclipse.core.internal.resources.ProjectPreferences.flush(ProjectPreferences.java:365)
+	at org.eclipse.jdt.internal.core.JavaProject.setOption(JavaProject.java:2955)
+	at org.eclipse.andmore.internal.project.ProjectHelper.checkAndFixCompilerCompliance(ProjectHelper.java:513)
+	at org.eclipse.andmore.internal.project.ProjectHelper.fixProjectClasspathEntries(ProjectHelper.java:422)
+	at org.eclipse.andmore.internal.project.ProjectHelper.fixProject(ProjectHelper.java:296)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator.createEclipseProject(NewProjectCreator.java:841)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator.createProjectAsync(NewProjectCreator.java:659)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator.access$0(NewProjectCreator.java:589)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator$3.execute(NewProjectCreator.java:399)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:107)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:128)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+!SUBENTRY 1 org.eclipse.core.resources 4 272 2016-12-20 17:01:15.531
+!MESSAGE A resource already exists on disk '/Users/florasaramago/moa/meu-onibus-android/appcompat_v7/.settings'.
+
+!ENTRY org.eclipse.core.resources 4 4 2016-12-20 17:01:15.540
+!MESSAGE Exception occurred while saving project preferences: /appcompat_v7/.settings/org.eclipse.jdt.core.prefs.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: A resource already exists on disk '/Users/florasaramago/moa/meu-onibus-android/appcompat_v7/.settings'.
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:47)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:93)
+	at org.eclipse.core.internal.resources.ProjectPreferences$1.run(ProjectPreferences.java:634)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.ProjectPreferences.save(ProjectPreferences.java:660)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalFlush(EclipsePreferences.java:431)
+	at org.eclipse.core.internal.resources.ProjectPreferences.flush(ProjectPreferences.java:365)
+	at org.eclipse.jdt.internal.core.JavaProject.setOption(JavaProject.java:2955)
+	at org.eclipse.andmore.internal.project.ProjectHelper.checkAndFixCompilerCompliance(ProjectHelper.java:515)
+	at org.eclipse.andmore.internal.project.ProjectHelper.fixProjectClasspathEntries(ProjectHelper.java:422)
+	at org.eclipse.andmore.internal.project.ProjectHelper.fixProject(ProjectHelper.java:296)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator.createEclipseProject(NewProjectCreator.java:841)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator.createProjectAsync(NewProjectCreator.java:659)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator.access$0(NewProjectCreator.java:589)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator$3.execute(NewProjectCreator.java:399)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:107)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:128)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+!SUBENTRY 1 org.eclipse.core.resources 4 272 2016-12-20 17:01:15.540
+!MESSAGE A resource already exists on disk '/Users/florasaramago/moa/meu-onibus-android/appcompat_v7/.settings'.
+
+!ENTRY org.eclipse.core.resources 4 4 2016-12-20 17:01:15.555
+!MESSAGE Exception occurred while saving project preferences: /appcompat_v7/.settings/org.eclipse.jdt.core.prefs.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: A resource already exists on disk '/Users/florasaramago/moa/meu-onibus-android/appcompat_v7/.settings'.
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:47)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:93)
+	at org.eclipse.core.internal.resources.ProjectPreferences$1.run(ProjectPreferences.java:634)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.ProjectPreferences.save(ProjectPreferences.java:660)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalFlush(EclipsePreferences.java:431)
+	at org.eclipse.core.internal.resources.ProjectPreferences.flush(ProjectPreferences.java:365)
+	at org.eclipse.jdt.internal.core.JavaProject.setOption(JavaProject.java:2955)
+	at org.eclipse.andmore.internal.project.ProjectHelper.checkAndFixCompilerCompliance(ProjectHelper.java:517)
+	at org.eclipse.andmore.internal.project.ProjectHelper.fixProjectClasspathEntries(ProjectHelper.java:422)
+	at org.eclipse.andmore.internal.project.ProjectHelper.fixProject(ProjectHelper.java:296)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator.createEclipseProject(NewProjectCreator.java:841)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator.createProjectAsync(NewProjectCreator.java:659)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator.access$0(NewProjectCreator.java:589)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator$3.execute(NewProjectCreator.java:399)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:107)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:128)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+!SUBENTRY 1 org.eclipse.core.resources 4 272 2016-12-20 17:01:15.557
+!MESSAGE A resource already exists on disk '/Users/florasaramago/moa/meu-onibus-android/appcompat_v7/.settings'.
+
+!ENTRY org.eclipse.core.resources 4 4 2016-12-20 17:01:16.832
+!MESSAGE Exception occurred while saving project preferences: /google-play-services_lib/.settings/org.eclipse.jdt.core.prefs.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: A resource already exists on disk '/Users/florasaramago/moa/meu-onibus-android/google-play-services_lib/.settings'.
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:47)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:93)
+	at org.eclipse.core.internal.resources.ProjectPreferences$1.run(ProjectPreferences.java:634)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.ProjectPreferences.save(ProjectPreferences.java:660)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalFlush(EclipsePreferences.java:431)
+	at org.eclipse.core.internal.resources.ProjectPreferences.flush(ProjectPreferences.java:365)
+	at org.eclipse.jdt.internal.core.JavaProject.setOption(JavaProject.java:2955)
+	at org.eclipse.andmore.internal.project.ProjectHelper.checkAndFixCompilerCompliance(ProjectHelper.java:513)
+	at org.eclipse.andmore.internal.project.ProjectHelper.fixProjectClasspathEntries(ProjectHelper.java:422)
+	at org.eclipse.andmore.internal.project.ProjectHelper.fixProject(ProjectHelper.java:296)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator.createEclipseProject(NewProjectCreator.java:841)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator.createProjectAsync(NewProjectCreator.java:659)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator.access$0(NewProjectCreator.java:589)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator$3.execute(NewProjectCreator.java:399)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:107)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:128)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+!SUBENTRY 1 org.eclipse.core.resources 4 272 2016-12-20 17:01:16.833
+!MESSAGE A resource already exists on disk '/Users/florasaramago/moa/meu-onibus-android/google-play-services_lib/.settings'.
+
+!ENTRY org.eclipse.core.resources 4 4 2016-12-20 17:01:16.836
+!MESSAGE Exception occurred while saving project preferences: /google-play-services_lib/.settings/org.eclipse.jdt.core.prefs.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: A resource already exists on disk '/Users/florasaramago/moa/meu-onibus-android/google-play-services_lib/.settings'.
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:47)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:93)
+	at org.eclipse.core.internal.resources.ProjectPreferences$1.run(ProjectPreferences.java:634)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.ProjectPreferences.save(ProjectPreferences.java:660)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalFlush(EclipsePreferences.java:431)
+	at org.eclipse.core.internal.resources.ProjectPreferences.flush(ProjectPreferences.java:365)
+	at org.eclipse.jdt.internal.core.JavaProject.setOption(JavaProject.java:2955)
+	at org.eclipse.andmore.internal.project.ProjectHelper.checkAndFixCompilerCompliance(ProjectHelper.java:515)
+	at org.eclipse.andmore.internal.project.ProjectHelper.fixProjectClasspathEntries(ProjectHelper.java:422)
+	at org.eclipse.andmore.internal.project.ProjectHelper.fixProject(ProjectHelper.java:296)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator.createEclipseProject(NewProjectCreator.java:841)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator.createProjectAsync(NewProjectCreator.java:659)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator.access$0(NewProjectCreator.java:589)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator$3.execute(NewProjectCreator.java:399)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:107)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:128)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+!SUBENTRY 1 org.eclipse.core.resources 4 272 2016-12-20 17:01:16.837
+!MESSAGE A resource already exists on disk '/Users/florasaramago/moa/meu-onibus-android/google-play-services_lib/.settings'.
+
+!ENTRY org.eclipse.core.resources 4 4 2016-12-20 17:01:16.839
+!MESSAGE Exception occurred while saving project preferences: /google-play-services_lib/.settings/org.eclipse.jdt.core.prefs.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: A resource already exists on disk '/Users/florasaramago/moa/meu-onibus-android/google-play-services_lib/.settings'.
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:47)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:93)
+	at org.eclipse.core.internal.resources.ProjectPreferences$1.run(ProjectPreferences.java:634)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.ProjectPreferences.save(ProjectPreferences.java:660)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalFlush(EclipsePreferences.java:431)
+	at org.eclipse.core.internal.resources.ProjectPreferences.flush(ProjectPreferences.java:365)
+	at org.eclipse.jdt.internal.core.JavaProject.setOption(JavaProject.java:2955)
+	at org.eclipse.andmore.internal.project.ProjectHelper.checkAndFixCompilerCompliance(ProjectHelper.java:517)
+	at org.eclipse.andmore.internal.project.ProjectHelper.fixProjectClasspathEntries(ProjectHelper.java:422)
+	at org.eclipse.andmore.internal.project.ProjectHelper.fixProject(ProjectHelper.java:296)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator.createEclipseProject(NewProjectCreator.java:841)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator.createProjectAsync(NewProjectCreator.java:659)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator.access$0(NewProjectCreator.java:589)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator$3.execute(NewProjectCreator.java:399)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:107)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:128)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+!SUBENTRY 1 org.eclipse.core.resources 4 272 2016-12-20 17:01:16.842
+!MESSAGE A resource already exists on disk '/Users/florasaramago/moa/meu-onibus-android/google-play-services_lib/.settings'.
+
+!ENTRY org.eclipse.core.resources 4 4 2016-12-20 17:01:17.898
+!MESSAGE Exception occurred while saving project preferences: /MeuOnibus/.settings/org.eclipse.jdt.core.prefs.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: A resource already exists on disk '/Users/florasaramago/moa/meu-onibus-android/MeuOnibus/.settings'.
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:47)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:93)
+	at org.eclipse.core.internal.resources.ProjectPreferences$1.run(ProjectPreferences.java:634)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.ProjectPreferences.save(ProjectPreferences.java:660)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalFlush(EclipsePreferences.java:431)
+	at org.eclipse.core.internal.resources.ProjectPreferences.flush(ProjectPreferences.java:365)
+	at org.eclipse.jdt.internal.core.JavaProject.setOption(JavaProject.java:2955)
+	at org.eclipse.andmore.internal.project.ProjectHelper.checkAndFixCompilerCompliance(ProjectHelper.java:513)
+	at org.eclipse.andmore.internal.project.ProjectHelper.fixProjectClasspathEntries(ProjectHelper.java:422)
+	at org.eclipse.andmore.internal.project.ProjectHelper.fixProject(ProjectHelper.java:296)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator.createEclipseProject(NewProjectCreator.java:841)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator.createProjectAsync(NewProjectCreator.java:659)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator.access$0(NewProjectCreator.java:589)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator$3.execute(NewProjectCreator.java:399)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:107)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:128)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+!SUBENTRY 1 org.eclipse.core.resources 4 272 2016-12-20 17:01:17.899
+!MESSAGE A resource already exists on disk '/Users/florasaramago/moa/meu-onibus-android/MeuOnibus/.settings'.
+
+!ENTRY org.eclipse.core.resources 4 4 2016-12-20 17:01:17.909
+!MESSAGE Exception occurred while saving project preferences: /MeuOnibus/.settings/org.eclipse.jdt.core.prefs.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: A resource already exists on disk '/Users/florasaramago/moa/meu-onibus-android/MeuOnibus/.settings'.
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:47)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:93)
+	at org.eclipse.core.internal.resources.ProjectPreferences$1.run(ProjectPreferences.java:634)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.ProjectPreferences.save(ProjectPreferences.java:660)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalFlush(EclipsePreferences.java:431)
+	at org.eclipse.core.internal.resources.ProjectPreferences.flush(ProjectPreferences.java:365)
+	at org.eclipse.jdt.internal.core.JavaProject.setOption(JavaProject.java:2955)
+	at org.eclipse.andmore.internal.project.ProjectHelper.checkAndFixCompilerCompliance(ProjectHelper.java:515)
+	at org.eclipse.andmore.internal.project.ProjectHelper.fixProjectClasspathEntries(ProjectHelper.java:422)
+	at org.eclipse.andmore.internal.project.ProjectHelper.fixProject(ProjectHelper.java:296)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator.createEclipseProject(NewProjectCreator.java:841)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator.createProjectAsync(NewProjectCreator.java:659)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator.access$0(NewProjectCreator.java:589)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator$3.execute(NewProjectCreator.java:399)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:107)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:128)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+!SUBENTRY 1 org.eclipse.core.resources 4 272 2016-12-20 17:01:17.909
+!MESSAGE A resource already exists on disk '/Users/florasaramago/moa/meu-onibus-android/MeuOnibus/.settings'.
+
+!ENTRY org.eclipse.core.resources 4 4 2016-12-20 17:01:17.911
+!MESSAGE Exception occurred while saving project preferences: /MeuOnibus/.settings/org.eclipse.jdt.core.prefs.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: A resource already exists on disk '/Users/florasaramago/moa/meu-onibus-android/MeuOnibus/.settings'.
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:47)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:93)
+	at org.eclipse.core.internal.resources.ProjectPreferences$1.run(ProjectPreferences.java:634)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.ProjectPreferences.save(ProjectPreferences.java:660)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalFlush(EclipsePreferences.java:431)
+	at org.eclipse.core.internal.resources.ProjectPreferences.flush(ProjectPreferences.java:365)
+	at org.eclipse.jdt.internal.core.JavaProject.setOption(JavaProject.java:2955)
+	at org.eclipse.andmore.internal.project.ProjectHelper.checkAndFixCompilerCompliance(ProjectHelper.java:517)
+	at org.eclipse.andmore.internal.project.ProjectHelper.fixProjectClasspathEntries(ProjectHelper.java:422)
+	at org.eclipse.andmore.internal.project.ProjectHelper.fixProject(ProjectHelper.java:296)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator.createEclipseProject(NewProjectCreator.java:841)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator.createProjectAsync(NewProjectCreator.java:659)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator.access$0(NewProjectCreator.java:589)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator$3.execute(NewProjectCreator.java:399)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:107)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:128)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+!SUBENTRY 1 org.eclipse.core.resources 4 272 2016-12-20 17:01:17.911
+!MESSAGE A resource already exists on disk '/Users/florasaramago/moa/meu-onibus-android/MeuOnibus/.settings'.
+
+!ENTRY org.eclipse.core.resources 4 4 2016-12-20 17:01:18.883
+!MESSAGE Exception occurred while saving project preferences: /MeuOnibusAlfaBarra2/.settings/org.eclipse.jdt.core.prefs.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: A resource already exists on disk '/Users/florasaramago/moa/meu-onibus-android/MeuOnibusAlfaBarra2/.settings'.
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:47)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:93)
+	at org.eclipse.core.internal.resources.ProjectPreferences$1.run(ProjectPreferences.java:634)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.ProjectPreferences.save(ProjectPreferences.java:660)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalFlush(EclipsePreferences.java:431)
+	at org.eclipse.core.internal.resources.ProjectPreferences.flush(ProjectPreferences.java:365)
+	at org.eclipse.jdt.internal.core.JavaProject.setOption(JavaProject.java:2955)
+	at org.eclipse.andmore.internal.project.ProjectHelper.checkAndFixCompilerCompliance(ProjectHelper.java:513)
+	at org.eclipse.andmore.internal.project.ProjectHelper.fixProjectClasspathEntries(ProjectHelper.java:422)
+	at org.eclipse.andmore.internal.project.ProjectHelper.fixProject(ProjectHelper.java:296)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator.createEclipseProject(NewProjectCreator.java:841)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator.createProjectAsync(NewProjectCreator.java:659)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator.access$0(NewProjectCreator.java:589)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator$3.execute(NewProjectCreator.java:399)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:107)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:128)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+!SUBENTRY 1 org.eclipse.core.resources 4 272 2016-12-20 17:01:18.883
+!MESSAGE A resource already exists on disk '/Users/florasaramago/moa/meu-onibus-android/MeuOnibusAlfaBarra2/.settings'.
+
+!ENTRY org.eclipse.core.resources 4 4 2016-12-20 17:01:18.885
+!MESSAGE Exception occurred while saving project preferences: /MeuOnibusAlfaBarra2/.settings/org.eclipse.jdt.core.prefs.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: A resource already exists on disk '/Users/florasaramago/moa/meu-onibus-android/MeuOnibusAlfaBarra2/.settings'.
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:47)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:93)
+	at org.eclipse.core.internal.resources.ProjectPreferences$1.run(ProjectPreferences.java:634)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.ProjectPreferences.save(ProjectPreferences.java:660)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalFlush(EclipsePreferences.java:431)
+	at org.eclipse.core.internal.resources.ProjectPreferences.flush(ProjectPreferences.java:365)
+	at org.eclipse.jdt.internal.core.JavaProject.setOption(JavaProject.java:2955)
+	at org.eclipse.andmore.internal.project.ProjectHelper.checkAndFixCompilerCompliance(ProjectHelper.java:515)
+	at org.eclipse.andmore.internal.project.ProjectHelper.fixProjectClasspathEntries(ProjectHelper.java:422)
+	at org.eclipse.andmore.internal.project.ProjectHelper.fixProject(ProjectHelper.java:296)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator.createEclipseProject(NewProjectCreator.java:841)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator.createProjectAsync(NewProjectCreator.java:659)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator.access$0(NewProjectCreator.java:589)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator$3.execute(NewProjectCreator.java:399)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:107)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:128)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+!SUBENTRY 1 org.eclipse.core.resources 4 272 2016-12-20 17:01:18.885
+!MESSAGE A resource already exists on disk '/Users/florasaramago/moa/meu-onibus-android/MeuOnibusAlfaBarra2/.settings'.
+
+!ENTRY org.eclipse.core.resources 4 4 2016-12-20 17:01:18.888
+!MESSAGE Exception occurred while saving project preferences: /MeuOnibusAlfaBarra2/.settings/org.eclipse.jdt.core.prefs.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: A resource already exists on disk '/Users/florasaramago/moa/meu-onibus-android/MeuOnibusAlfaBarra2/.settings'.
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:47)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:93)
+	at org.eclipse.core.internal.resources.ProjectPreferences$1.run(ProjectPreferences.java:634)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.ProjectPreferences.save(ProjectPreferences.java:660)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalFlush(EclipsePreferences.java:431)
+	at org.eclipse.core.internal.resources.ProjectPreferences.flush(ProjectPreferences.java:365)
+	at org.eclipse.jdt.internal.core.JavaProject.setOption(JavaProject.java:2955)
+	at org.eclipse.andmore.internal.project.ProjectHelper.checkAndFixCompilerCompliance(ProjectHelper.java:517)
+	at org.eclipse.andmore.internal.project.ProjectHelper.fixProjectClasspathEntries(ProjectHelper.java:422)
+	at org.eclipse.andmore.internal.project.ProjectHelper.fixProject(ProjectHelper.java:296)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator.createEclipseProject(NewProjectCreator.java:841)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator.createProjectAsync(NewProjectCreator.java:659)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator.access$0(NewProjectCreator.java:589)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator$3.execute(NewProjectCreator.java:399)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:107)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:128)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+!SUBENTRY 1 org.eclipse.core.resources 4 272 2016-12-20 17:01:18.889
+!MESSAGE A resource already exists on disk '/Users/florasaramago/moa/meu-onibus-android/MeuOnibusAlfaBarra2/.settings'.
+
+!ENTRY org.eclipse.andmore 4 0 2016-12-20 17:01:18.937
+!MESSAGE New Project Wizard failed
+!STACK 0
+java.lang.reflect.InvocationTargetException
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator.createProjectAsync(NewProjectCreator.java:676)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator.access$0(NewProjectCreator.java:589)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator$3.execute(NewProjectCreator.java:399)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:107)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:128)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:169)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:53)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:263)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:247)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator.createEclipseProject(NewProjectCreator.java:727)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator.createProjectAsync(NewProjectCreator.java:659)
+	... 7 more
+Root exception:
+org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:169)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:53)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:263)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:247)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator.createEclipseProject(NewProjectCreator.java:727)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator.createProjectAsync(NewProjectCreator.java:659)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator.access$0(NewProjectCreator.java:589)
+	at org.eclipse.andmore.internal.wizards.newproject.NewProjectCreator$3.execute(NewProjectCreator.java:399)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:107)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:128)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+Contains: OK
+Contains: /Users/florasaramago/moa/meu-onibus-android/MeuOnibusAlphaBarra overlaps the location of another project: 'MeuOnibusAlphaBarra'
