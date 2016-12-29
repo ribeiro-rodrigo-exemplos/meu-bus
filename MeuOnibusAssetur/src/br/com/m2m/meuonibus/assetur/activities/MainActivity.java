@@ -9,26 +9,29 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.util.Log;
 import br.com.hhw.startapp.activities.MenuStartAppActivity;
-import br.com.hhw.startapp.helpers.SharedPreferencesHelper;
 import br.com.how.hhwslidemenu.HHWMenuItem;
 import br.com.how.hhwslidemenu.HHWSlideMenu;
 import br.com.m2m.meuonibus.assetur.R;
 import br.com.m2m.meuonibus.assetur.fragments.AjustesFragment;
 import br.com.m2m.meuonibus.assetur.fragments.FaleConoscoFragment;
-import br.com.m2m.meuonibus.assetur.fragments.HomeFragment;
-import br.com.m2m.meuonibus.assetur.fragments.MeusPontosFragment;
+import br.com.m2m.meuonibus.assetur.fragments.ListaLinhasFragment;
 import br.com.m2m.meuonibus.assetur.fragments.NoticiasFragment;
 import br.com.m2m.meuonibuscommons.adapters.PlaceAutocompleteAdapter;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.places.Places;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.LatLngBounds;
 
 public class MainActivity extends MenuStartAppActivity implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
 	
 	public GoogleApiClient mGoogleApiClient;
 	public PlaceAutocompleteAdapter mAdapter;
 	protected static final String TAG = "API Places >>>>> ";
+	private static final LatLngBounds BOUNDS_GREATER_BRAZIL = new LatLngBounds(
+			new LatLng(-14.2392976, -53.1805017), new LatLng(-13.2392976,
+					-52.1805017));
 
 	protected void createMenu() {
 
@@ -37,10 +40,7 @@ public class MainActivity extends MenuStartAppActivity implements GoogleApiClien
 			
 			ArrayList<HHWMenuItem> menuItems = new ArrayList<HHWMenuItem>();
 						
-			menuItems.add(new HHWMenuItem(getString(R.string.inicio), new HomeFragment(), getResources().getDrawable(R.drawable.mn_item_inicio)));
-//			menuItems.add(new HHWMenuItem(getString(R.string.planejador), fragment
-//					.newInstance("Planejador de viagens"), getResources().getDrawable(R.drawable.mn_item_planejador)));
-			menuItems.add(new HHWMenuItem(getString(R.string.favoritos), new MeusPontosFragment(), getResources().getDrawable(R.drawable.mn_item_meuspontos)));
+			menuItems.add(new HHWMenuItem(getString(R.string.inicio), new ListaLinhasFragment(), getResources().getDrawable(R.drawable.mn_item_inicio)));
 			menuItems.add(new HHWMenuItem(getString(R.string.noticias), new NoticiasFragment(), getResources().getDrawable(R.drawable.mn_item_noticias)));
 			menuItems.add(new HHWMenuItem(getString(R.string.fale_conosco), new FaleConoscoFragment(), getResources().getDrawable(R.drawable.mn_item_faleconosco)));
 			menuItems.add(new HHWMenuItem(getString(R.string.ajustes), new AjustesFragment(), getResources().getDrawable(R.drawable.mn_item_ajustes)));
@@ -53,14 +53,12 @@ public class MainActivity extends MenuStartAppActivity implements GoogleApiClien
 	}
 	
 	protected void onCreateStartApp() {
-		if (SharedPreferencesHelper.getInstance(this).hasToShowTutorial()) {
-			SharedPreferencesHelper.getInstance(this).setHasToShowTutorial(
-					false);
-			startActivity(new Intent(this, TutorialActivity.class));
-		}
+		startActivity(new Intent(this, ListaLinhasActivity.class));
 		setCustomActionBar();
 		if (mGoogleApiClient == null) {
 			rebuildGoogleApiClient();
+			mAdapter = new PlaceAutocompleteAdapter(getApplicationContext(), android.R.layout.simple_list_item_1, BOUNDS_GREATER_BRAZIL,
+					null);
 		}
 	}
 	
@@ -94,16 +92,6 @@ public class MainActivity extends MenuStartAppActivity implements GoogleApiClien
 		Log.e(TAG, "onConnectionFailed: ConnectionResult.getErrorCode() = "
 				+ connectionResult.getErrorCode());
 
-		// TODO(Developer): Check error code and notify the user of error state
-		// and resolution.
-//		Toast.makeText(
-//				this,
-//				"Could not connect to Google API Client: Error "
-//						+ connectionResult.getErrorCode(), Toast.LENGTH_SHORT)
-//				.show();
-
-		// Disable API access in the adapter because the client was not
-		// initialised correctly.
 		mAdapter.setGoogleApiClient(null);		
 	}
 	
@@ -113,11 +101,6 @@ public class MainActivity extends MenuStartAppActivity implements GoogleApiClien
 	 * handle Activity lifecycle events.
 	 */
 	protected synchronized void rebuildGoogleApiClient() {
-		// When we build the GoogleApiClient we specify where connected and
-		// connection failed
-		// callbacks should be returned, which Google APIs our app uses and
-		// which OAuth 2.0
-		// scopes our app requests.
 		mGoogleApiClient = new GoogleApiClient.Builder(this)
 				.enableAutoManage(this, 0 /* clientId */, this)
 				.addConnectionCallbacks(this).addApi(Places.GEO_DATA_API)
