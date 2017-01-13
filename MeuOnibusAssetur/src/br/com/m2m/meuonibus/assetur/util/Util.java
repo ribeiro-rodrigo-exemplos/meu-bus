@@ -10,9 +10,6 @@ import br.com.m2m.meuonibuscommons.models.ConfiguracaoWS;
 
 public class Util {
 	
-	
-	
-	
 	public static ConfiguracaoWS carregarConfiguracaoWS(Context context){
 		
 		ConfiguracaoWS configuracaoWS = new ConfiguracaoWS();
@@ -24,11 +21,13 @@ public class Util {
             
             properties.load(rawResourse);
             
+            configuracaoWS.setIdCliente(Integer.valueOf(properties.getProperty("idCliente")));
             configuracaoWS.setUsuario(properties.getProperty("user"));
             configuracaoWS.setPassword(properties.getProperty("password"));
             configuracaoWS.setUrl(properties.getProperty("base.url"));
             configuracaoWS.setPontoOnibus(properties.getProperty("ponto_de_onibus"));
             configuracaoWS.setLinhasDoPonto(properties.getProperty("linhas_do_ponto"));
+            configuracaoWS.setLinhasDoCliente(properties.getProperty("linhas_do_cliente"));
             configuracaoWS.setTrajetoLinha(properties.getProperty("trajeto_linha"));
             configuracaoWS.setInforLinha(properties.getProperty("linha_informacao"));
             configuracaoWS.setListaNoticias(properties.getProperty("lista_noticias"));

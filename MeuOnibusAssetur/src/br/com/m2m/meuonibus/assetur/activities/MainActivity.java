@@ -2,7 +2,6 @@ package br.com.m2m.meuonibus.assetur.activities;
 
 import java.util.ArrayList;
 
-import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -53,7 +52,6 @@ public class MainActivity extends MenuStartAppActivity implements GoogleApiClien
 	}
 	
 	protected void onCreateStartApp() {
-		startActivity(new Intent(this, ListaLinhasActivity.class));
 		setCustomActionBar();
 		if (mGoogleApiClient == null) {
 			rebuildGoogleApiClient();

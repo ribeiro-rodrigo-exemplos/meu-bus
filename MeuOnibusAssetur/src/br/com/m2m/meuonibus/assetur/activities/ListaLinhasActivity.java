@@ -9,11 +9,6 @@ import br.com.m2m.meuonibuscommons.models.PontoOnibus;
 
 public class ListaLinhasActivity extends BaseWithTitleActivity {
 
-	public static final String EXTRA_LISTA_LINHAS_PONTO = ListaLinhasActivity.class
-			.getName() + "#ponto";
-	public static final String BUNDLE_LISTA_LINHAS_PONTO = ListaLinhasActivity.class
-			.getName() + "#bundle_ponto";
-
 	public PontoOnibus ponto;
 
 	@Override
@@ -22,20 +17,6 @@ public class ListaLinhasActivity extends BaseWithTitleActivity {
 
 		setContentView(R.layout.activity_lista_linhas);
 
-		try {
-			Bundle extra = getIntent().getBundleExtra(EXTRA_LISTA_LINHAS_PONTO);
-			ponto = (PontoOnibus) extra
-					.getSerializable(BUNDLE_LISTA_LINHAS_PONTO);
-		} catch (Exception e) {
-			// TODO: handle exception
-		}
-
-		if (ponto != null) {
-			setActionBarTitle(ponto.nome);
-		} else {
-			setActionBarTitle("Ponto:");
-		}
-
 		if (savedInstanceState == null) {
 			Fragment fragment = ListaLinhasFragment.newInstance(ponto);
 			getSupportFragmentManager().beginTransaction()
@@ -43,7 +24,4 @@ public class ListaLinhasActivity extends BaseWithTitleActivity {
 		}
 	}
 
-	public void setCustomTitle(String nome) {
-		setActionBarTitle(nome);
-	}
 }
