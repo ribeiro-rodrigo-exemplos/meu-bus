@@ -1,1 +1,0 @@
-package br.com.m2m.meuonibuscommons.handlers;import java.util.ArrayList;import android.os.Handler;import br.com.m2m.meuonibuscommons.models.PontoOnibus;public class PontoOnibusHandler extends Handler {	public void setPontoOnibus(PontoOnibus ponto) {	}	public void setPontosOnibus(ArrayList<PontoOnibus> pontos) {	}	public void setErro(Throwable e) {	}}

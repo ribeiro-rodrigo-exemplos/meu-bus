@@ -11,7 +11,6 @@ import br.com.hhw.startapp.activities.MenuStartAppActivity;
 import br.com.how.hhwslidemenu.HHWMenuItem;
 import br.com.how.hhwslidemenu.HHWSlideMenu;
 import br.com.m2m.meuonibus.assetur.R;
-import br.com.m2m.meuonibus.assetur.fragments.AjustesFragment;
 import br.com.m2m.meuonibus.assetur.fragments.FaleConoscoFragment;
 import br.com.m2m.meuonibus.assetur.fragments.ListaLinhasFragment;
 import br.com.m2m.meuonibus.assetur.fragments.NoticiasFragment;
@@ -42,7 +41,6 @@ public class MainActivity extends MenuStartAppActivity implements GoogleApiClien
 			menuItems.add(new HHWMenuItem(getString(R.string.inicio), new ListaLinhasFragment(), getResources().getDrawable(R.drawable.mn_item_inicio)));
 			menuItems.add(new HHWMenuItem(getString(R.string.noticias), new NoticiasFragment(), getResources().getDrawable(R.drawable.mn_item_noticias)));
 			menuItems.add(new HHWMenuItem(getString(R.string.fale_conosco), new FaleConoscoFragment(), getResources().getDrawable(R.drawable.mn_item_faleconosco)));
-			menuItems.add(new HHWMenuItem(getString(R.string.ajustes), new AjustesFragment(), getResources().getDrawable(R.drawable.mn_item_ajustes)));
 			menuItems.add(new HHWMenuItem(getString(R.string.como_funciona), TutorialActivity.class, getResources().getDrawable(R.drawable.mn_item_comofunciona)));
 
 			slideMenu = new HHWSlideMenu(this, menuItems);
