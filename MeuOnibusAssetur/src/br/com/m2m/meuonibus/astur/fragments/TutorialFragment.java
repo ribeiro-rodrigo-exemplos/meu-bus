@@ -1,4 +1,4 @@
-package br.com.m2m.meuonibus.assetur.fragments;
+package br.com.m2m.meuonibus.astur.fragments;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import br.com.m2m.meuonibus.assetur.R;
+import br.com.m2m.meuonibus.astur.R;
 
 @SuppressLint({ "SetJavaScriptEnabled", "ValidFragment" })
 public class TutorialFragment extends Fragment {

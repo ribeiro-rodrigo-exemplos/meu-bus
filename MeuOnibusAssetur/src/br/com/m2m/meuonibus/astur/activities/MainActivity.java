@@ -1,4 +1,4 @@
-package br.com.m2m.meuonibus.assetur.activities;
+package br.com.m2m.meuonibus.astur.activities;
 
 import java.util.ArrayList;
 
@@ -10,10 +10,10 @@ import android.util.Log;
 import br.com.hhw.startapp.activities.MenuStartAppActivity;
 import br.com.how.hhwslidemenu.HHWMenuItem;
 import br.com.how.hhwslidemenu.HHWSlideMenu;
-import br.com.m2m.meuonibus.assetur.R;
-import br.com.m2m.meuonibus.assetur.fragments.FaleConoscoFragment;
-import br.com.m2m.meuonibus.assetur.fragments.ListaLinhasFragment;
-import br.com.m2m.meuonibus.assetur.fragments.NoticiasFragment;
+import br.com.m2m.meuonibus.astur.R;
+import br.com.m2m.meuonibus.astur.fragments.FaleConoscoFragment;
+import br.com.m2m.meuonibus.astur.fragments.ListaLinhasFragment;
+import br.com.m2m.meuonibus.astur.fragments.NoticiasFragment;
 import br.com.m2m.meuonibuscommons.adapters.PlaceAutocompleteAdapter;
 
 import com.google.android.gms.common.ConnectionResult;

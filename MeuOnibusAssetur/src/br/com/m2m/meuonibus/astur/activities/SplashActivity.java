@@ -1,10 +1,10 @@
-package br.com.m2m.meuonibus.assetur.activities;
+package br.com.m2m.meuonibus.astur.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.ActionBarActivity;
-import br.com.m2m.meuonibus.assetur.R;
+import br.com.m2m.meuonibus.astur.R;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.

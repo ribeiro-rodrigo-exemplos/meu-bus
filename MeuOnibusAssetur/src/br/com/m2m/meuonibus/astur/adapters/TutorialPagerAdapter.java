@@ -1,4 +1,4 @@
-package br.com.m2m.meuonibus.assetur.adapters;
+package br.com.m2m.meuonibus.astur.adapters;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -7,8 +7,8 @@ import java.util.List;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-import br.com.m2m.meuonibus.assetur.R;
-import br.com.m2m.meuonibus.assetur.fragments.TutorialFragment;
+import br.com.m2m.meuonibus.astur.R;
+import br.com.m2m.meuonibus.astur.fragments.TutorialFragment;
 
 public class TutorialPagerAdapter extends FragmentPagerAdapter {
 

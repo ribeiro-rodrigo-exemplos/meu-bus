@@ -1,8 +1,8 @@
-package br.com.m2m.meuonibus.assetur.activities;
+package br.com.m2m.meuonibus.astur.activities;
 
 import android.os.Bundle;
-import br.com.m2m.meuonibus.assetur.R;
-import br.com.m2m.meuonibus.assetur.fragments.NoticiaDetalheFragment;
+import br.com.m2m.meuonibus.astur.R;
+import br.com.m2m.meuonibus.astur.fragments.NoticiaDetalheFragment;
 import br.com.m2m.meuonibuscommons.activities.base.BaseWithTitleActivity;
 import br.com.m2m.meuonibuscommons.models.Noticia;
 
