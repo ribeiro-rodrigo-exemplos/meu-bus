@@ -57,8 +57,20 @@ public class Util {
 		} catch(IOException e) {
         	e.printStackTrace();
         }
-		return configuracaoWS;   
+		return configuracaoWS;
+	}
+	
+	public static String getSocketUrl(Context context) {
+		InputStream rawResourse = context.getResources().openRawResource(R.raw.webservicesconfig);
+		Properties properties = new Properties();
 		
+		try {
+			properties.load(rawResourse);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		return properties.getProperty("base.socket.sinotico");
 	}
 
 }
