@@ -7,6 +7,7 @@ public class ConfiguracaoWS {
 	private String url;
 	private String pontoOnibus;
 	private String linhasDoPonto;
+	private String linhasDoCliente;
 	private String trajetoLinha;
 	private String inforLinha;
 	private String listaNoticias;
@@ -31,6 +32,12 @@ public class ConfiguracaoWS {
 	}
 	public void setLinhasDoPonto(String linhasDoPonto) {
 		this.linhasDoPonto = linhasDoPonto;
+	}
+	public String getLinhasDoCliente() {
+		return linhasDoCliente;
+	}
+	public void setLinhasDoCliente(String linhasDoCliente) {
+		this.linhasDoCliente = linhasDoCliente;
 	}
 	public String getTrajetoLinha() {
 		return trajetoLinha;
@@ -74,8 +81,5 @@ public class ConfiguracaoWS {
 	public void setUrl(String url) {
 		this.url = url;
 	}
-	
-	
-	
 
 }

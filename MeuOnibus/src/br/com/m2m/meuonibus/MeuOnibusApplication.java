@@ -1,1 +1,0 @@
-package br.com.m2m.meuonibus;import br.com.hhw.startapp.StartAppApplication;public class MeuOnibusApplication extends StartAppApplication {}
