@@ -73,6 +73,10 @@ public class SocketConnector {
 
         });		
 	}
+	
+	public void setupSubs(String subscription) {
+		socket.emit("setupSubs", subscription);
+	}
 
 	private void sync(final SocketListener listener) {
 		emitSync();
