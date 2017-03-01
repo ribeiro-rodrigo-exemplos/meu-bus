@@ -69,4 +69,7 @@
     <string name="opcao_1k">1 km</string>
     <string name="opcao_2k">2 km</string>
     <!-- outros -->
+    <!-- inicial -->
+    <string name="linha">Linha</string>
+    <string name="trajeto">Trajeto</string>
 </resources>

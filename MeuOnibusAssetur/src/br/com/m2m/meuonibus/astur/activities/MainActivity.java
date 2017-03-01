@@ -2,6 +2,12 @@ package br.com.m2m.meuonibus.astur.activities;
 
 import java.util.ArrayList;
 
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.location.places.Places;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.LatLngBounds;
+
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -12,15 +18,9 @@ import br.com.how.hhwslidemenu.HHWMenuItem;
 import br.com.how.hhwslidemenu.HHWSlideMenu;
 import br.com.m2m.meuonibus.astur.R;
 import br.com.m2m.meuonibus.astur.fragments.FaleConoscoFragment;
-import br.com.m2m.meuonibus.astur.fragments.ListaLinhasFragment;
+import br.com.m2m.meuonibus.astur.fragments.HomeSearchFragment;
 import br.com.m2m.meuonibus.astur.fragments.NoticiasFragment;
 import br.com.m2m.meuonibuscommons.adapters.PlaceAutocompleteAdapter;
-
-import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.location.places.Places;
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.LatLngBounds;
 
 public class MainActivity extends MenuStartAppActivity implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
 	
@@ -38,7 +38,7 @@ public class MainActivity extends MenuStartAppActivity implements GoogleApiClien
 			
 			ArrayList<HHWMenuItem> menuItems = new ArrayList<HHWMenuItem>();
 						
-			menuItems.add(new HHWMenuItem(getString(R.string.inicio), new ListaLinhasFragment(), getResources().getDrawable(R.drawable.mn_item_inicio)));
+			menuItems.add(new HHWMenuItem(getString(R.string.inicio), new HomeSearchFragment(), getResources().getDrawable(R.drawable.mn_item_inicio)));
 			menuItems.add(new HHWMenuItem(getString(R.string.noticias), new NoticiasFragment(), getResources().getDrawable(R.drawable.mn_item_noticias)));
 			menuItems.add(new HHWMenuItem(getString(R.string.fale_conosco), new FaleConoscoFragment(), getResources().getDrawable(R.drawable.mn_item_faleconosco)));
 			menuItems.add(new HHWMenuItem(getString(R.string.como_funciona), TutorialActivity.class, getResources().getDrawable(R.drawable.mn_item_comofunciona)));
