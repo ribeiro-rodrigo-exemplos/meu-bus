@@ -32,16 +32,17 @@ public class MainActivity extends MenuStartAppActivity implements GoogleApiClien
 					-52.1805017));
 
 	protected void createMenu() {
-
 		if (menuItems == null) {
-
-			
 			ArrayList<HHWMenuItem> menuItems = new ArrayList<HHWMenuItem>();
-						
-			menuItems.add(new HHWMenuItem(getString(R.string.inicio), new HomeSearchFragment(), getResources().getDrawable(R.drawable.mn_item_inicio)));
-			menuItems.add(new HHWMenuItem(getString(R.string.noticias), new NoticiasFragment(), getResources().getDrawable(R.drawable.mn_item_noticias)));
-			menuItems.add(new HHWMenuItem(getString(R.string.fale_conosco), new FaleConoscoFragment(), getResources().getDrawable(R.drawable.mn_item_faleconosco)));
-			menuItems.add(new HHWMenuItem(getString(R.string.como_funciona), TutorialActivity.class, getResources().getDrawable(R.drawable.mn_item_comofunciona)));
+
+			menuItems.add(new HHWMenuItem(getString(R.string.inicio), 
+					new HomeSearchFragment(), getResources().getDrawable(R.drawable.mn_item_inicio)));
+			menuItems.add(new HHWMenuItem(getString(R.string.noticias), 
+					new NoticiasFragment(), getResources().getDrawable(R.drawable.mn_item_noticias)));
+			menuItems.add(new HHWMenuItem(getString(R.string.fale_conosco), 
+					new FaleConoscoFragment(), getResources().getDrawable(R.drawable.mn_item_faleconosco)));
+			menuItems.add(new HHWMenuItem(getString(R.string.como_funciona), 
+					TutorialActivity.class, getResources().getDrawable(R.drawable.mn_item_comofunciona)));
 
 			slideMenu = new HHWSlideMenu(this, menuItems);
 		} else {
@@ -53,7 +54,8 @@ public class MainActivity extends MenuStartAppActivity implements GoogleApiClien
 		setCustomActionBar();
 		if (mGoogleApiClient == null) {
 			rebuildGoogleApiClient();
-			mAdapter = new PlaceAutocompleteAdapter(getApplicationContext(), android.R.layout.simple_list_item_1, BOUNDS_GREATER_BRAZIL,
+			mAdapter = new PlaceAutocompleteAdapter(getApplicationContext(), 
+					android.R.layout.simple_list_item_1, BOUNDS_GREATER_BRAZIL,
 					null);
 		}
 	}
@@ -65,7 +67,6 @@ public class MainActivity extends MenuStartAppActivity implements GoogleApiClien
         actionBar.setDisplayShowCustomEnabled(true);
         actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#5c9b91")));
 	}
-
 
 	@Override
 	public void onConnected(Bundle bundle) {

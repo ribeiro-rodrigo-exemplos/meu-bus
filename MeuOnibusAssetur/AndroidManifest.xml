@@ -37,7 +37,7 @@
             android:value="AIzaSyA8U9xUPiLArHo2PmoEh17O_G-AGy2hvjI" />
 
         <activity
-			android:name="br.com.m2m.meuonibus.astur.activities.SplashActivity"
+            android:name="br.com.m2m.meuonibus.astur.activities.SplashActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/app_name_in_device"
             android:screenOrientation="portrait"
@@ -49,7 +49,7 @@
             </intent-filter>
         </activity>
         <activity
-			android:name="br.com.m2m.meuonibus.astur.activities.MainActivity"
+            android:name="br.com.m2m.meuonibus.astur.activities.MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
             <intent-filter>
@@ -57,23 +57,28 @@
             </intent-filter>
         </activity>
         <activity
-			android:name="br.com.m2m.meuonibus.astur.activities.TutorialActivity"
+            android:name="br.com.m2m.meuonibus.astur.activities.TutorialActivity"
             android:label="@string/home"
             android:screenOrientation="portrait"
             android:theme="@style/FullscreenTheme" >
         </activity>
         <activity
-			android:name="br.com.m2m.meuonibus.astur.activities.ListaLinhasActivity"
+            android:name="br.com.m2m.meuonibus.astur.activities.HomeSearchActivity"
             android:label="@string/title_activity_lista_linhas"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-			android:name="br.com.m2m.meuonibus.astur.activities.OnibusDetalheActivity"
+            android:name="br.com.m2m.meuonibus.astur.activities.OnibusDetalheActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-			android:name="br.com.m2m.meuonibus.astur.activities.NoticiaDetalheActivity"
+            android:name="br.com.m2m.meuonibus.astur.activities.NoticiaDetalheActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="br.com.m2m.meuonibus.astur.activities.PrevisaoOnibusActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
         </activity>
