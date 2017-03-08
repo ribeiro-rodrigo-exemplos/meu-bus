@@ -41,6 +41,8 @@
     <string name="digite_endereco">Digite o endereço</string>
     <string name="noticias_vazia">Não há notícias no momento</string>
     <string name="nao_foi_possivel_obter_trajeto">Não foi possível obter o trajeto da linha.</string>
+    <string name="nao_foi_possivel_carregar_trajeto_no_mapa">Não foi possível carregar o trajeto no mapa</string>
+    <string name="nao_foi_possivel_carregar_dados_no_mapa">Não foi possível carregar os dados no mapa. Tente Novamente.</string>
     <string name="nao_foi_possivel_obter_previsao">Não foi possível obter a previsão de chegada do onibus.</string>
     <string name="nao_foi_possivel_localizar_linhas">Não foi possível localizar as linhas.</string>
     <string name="sentido">SENTIDO</string>

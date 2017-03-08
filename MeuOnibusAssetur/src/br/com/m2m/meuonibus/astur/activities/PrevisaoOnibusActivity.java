@@ -17,7 +17,6 @@ public class PrevisaoOnibusActivity extends BaseWithTitleActivity {
 
 	public PontoOnibus mPonto;
 	public Trajeto mTrajeto;
-	public LinhaOnibus mLinhaOnibus;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +27,6 @@ public class PrevisaoOnibusActivity extends BaseWithTitleActivity {
 		try {
 			mPonto = (PontoOnibus) getIntent().getSerializableExtra(EXTRA_LISTA_LINHAS_PONTO);
 			mTrajeto = (Trajeto) getIntent().getSerializableExtra(EXTRA_LISTA_LINHAS_TRAJETO);
-			mLinhaOnibus = (LinhaOnibus) getIntent().getSerializableExtra(EXTRA_LISTA_LINHAS);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -40,7 +38,7 @@ public class PrevisaoOnibusActivity extends BaseWithTitleActivity {
 		}
 
 		if (savedInstanceState == null) {
-			Fragment fragment = PrevisaoOnibusFragment.newInstance(mPonto, mTrajeto, mLinhaOnibus);
+			Fragment fragment = PrevisaoOnibusFragment.newInstance(mPonto, mTrajeto);
 			getSupportFragmentManager().beginTransaction()
 					.add(R.id.container_lista_linha, fragment).commit();
 		}

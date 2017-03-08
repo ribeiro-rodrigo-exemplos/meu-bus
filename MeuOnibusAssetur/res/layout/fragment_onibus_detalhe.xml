@@ -12,32 +12,6 @@
         android:layout_height="match_parent"
         android:layout_marginBottom="25dp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:visibility="gone"
-        android:orientation="vertical" >
-
-        <RelativeLayout
-            android:id="@+id/container_nome_linha_onibus_detalhe_fragment"
-            android:layout_width="match_parent"
-            android:layout_height="32dp"
-            android:background="@color/green"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp" >
-
-            <TextView
-                android:id="@+id/nome_linha_onibus_detalhe_fragment"
-                android:layout_width="fill_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="0dp"
-                android:gravity="left|center_vertical"
-                android:text="@null"
-                android:textColor="@color/white"
-                android:textSize="16sp" />
-        </RelativeLayout>
-    </LinearLayout>
-
     <include layout="@layout/include_rodape_m2m" />
 
 </RelativeLayout>
