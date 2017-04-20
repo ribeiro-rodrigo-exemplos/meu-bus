@@ -20,7 +20,7 @@ public class SplashActivity extends ActionBarActivity implements Runnable {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
-		setContentView(R.layout.activity_splash_assetur);
+		setContentView(R.layout.activity_splash_astur);
 		Handler handler = new Handler();
 		handler.postDelayed(this, SHOW_SPLASH_MILLIS);
 	}
