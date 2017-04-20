@@ -5,7 +5,6 @@ import android.support.v4.app.Fragment;
 import br.com.m2m.meuonibus.astur.R;
 import br.com.m2m.meuonibus.astur.fragments.PrevisaoOnibusFragment;
 import br.com.m2m.meuonibuscommons.activities.base.BaseWithTitleActivity;
-import br.com.m2m.meuonibuscommons.models.LinhaOnibus;
 import br.com.m2m.meuonibuscommons.models.PontoOnibus;
 import br.com.m2m.meuonibuscommons.models.Trajeto;
 
