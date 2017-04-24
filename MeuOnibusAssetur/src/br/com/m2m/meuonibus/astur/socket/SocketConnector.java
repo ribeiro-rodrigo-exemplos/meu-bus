@@ -20,7 +20,7 @@ public class SocketConnector {
 	private Socket socket = null;
 	private Context context;
 	private int delay = 15000;   // delay de 15 seg.
-    private int interval = 12000;  // intervalo de 12 seg.
+    private int interval = 5000;  // intervalo de 5 seg.
     private Timer timer;
 
 	public SocketConnector(Context context) {
@@ -44,22 +44,7 @@ public class SocketConnector {
 	      public void call(Object... args) {
 	          listener.onConnectError(args);
 	      }
-
 	  });
-	}
-
-	public void disconnect() {
-		socket.emit(Socket.EVENT_DISCONNECT);
-	}
-
-	private void initializeSocket(SocketListener listener, Context context) {
-		String baseUrl = Util.getSocketUrl(context);
-		try {
-			socket = IO.socket(baseUrl);
-		} catch (URISyntaxException e1) {
-			e1.printStackTrace();
-			listener.onEventError(e1);
-		}
 	}
 
 	private void setupSubs(final SocketListener listener) {
@@ -70,7 +55,6 @@ public class SocketConnector {
             public void call(Object... args) {
             	sync(listener);
             }
-
         });		
 	}
 	
@@ -79,8 +63,9 @@ public class SocketConnector {
 	}
 
 	private void sync(final SocketListener listener) {
-		emitSync();
-
+		socket.emit("sync");
+		scheduleSync();
+		
 		socket.on("sync", new Emitter.Listener() {
 
 		    @Override
@@ -97,8 +82,18 @@ public class SocketConnector {
 		    }
 		});
 	}
+	
+	private void initializeSocket(SocketListener listener, Context context) {
+		String baseUrl = Util.getSocketUrl(context);
+		try {
+			socket = IO.socket(baseUrl);
+		} catch (URISyntaxException e1) {
+			e1.printStackTrace();
+			listener.onEventError(e1);
+		}
+	}
 
-	private void emitSync() {
+	private void scheduleSync() {
 		if (timer != null) {
 			return;
 		}
