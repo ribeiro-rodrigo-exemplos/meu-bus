@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="left|center_vertical"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/actionBarImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:contentDescription="@null"
+        android:focusable="false"
+        android:longClickable="false"
+        android:src="@drawable/ac_onibus" />
+
+    <com.neopixl.pixlui.components.textview.TextView
+        android:id="@+id/title_custom_actionBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="6dp"
+        android:gravity="center"
+        android:text="@null"
+        android:textColor="@color/white"
+        android:textSize="27sp"
+        pixlui:typeface="FontCustom1.otf" />
+
+</LinearLayout>
